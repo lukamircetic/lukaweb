@@ -25,7 +25,7 @@ export const Home = () => (
                     </Col>
                 </Row>
                 <Row className="justify-content-md-center">
-                    <div class="rotating-text">
+                    <div className="rotating-text">
                         <p>
                         <ReactRotatingText items={['Biomedical Engineering', 'Software Development', 'Basketball']}/>
                         </p>

@@ -15,7 +15,7 @@ import Social from './components/Social'
 function App() {
   return (
     <React.Fragment>
-        <Router>
+        <Router basename="/">
           <NavigationBar />
           <Jumbotron/>
           <Social/>
