@@ -47,15 +47,6 @@ export const Projects = () => (
                 </div>
                 </Link>
             </Button>
-            {/* <Button
-            type="button" 
-            buttonStyle = "btn--secondary--outline"
-            buttonSize = "btn--medium"
-            onClick={scrollToTop}
-            >
-                Hello
-            </Button>
-            <p id="section1">hi</p> */}
             </Row>
             <Row>
                 <Image src={CImage} className="prog-image"/>
