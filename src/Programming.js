@@ -190,7 +190,7 @@ export const Programming = () => (
                             <td>
                                 <a href="https://github.com/lukamircetic/PathfindingVisualizer">Link</a>
                             </td>
-                            <td>25/12/2019</td>
+                            <td>30/12/2019</td>
                         </tr>
                         <tr>
                             <td>Flappy Bird Game and Neural Net</td>
@@ -227,11 +227,11 @@ export const Programming = () => (
                     </Link>
                 </Button>
             </Row>
-            <Row style={{marginTop: 100 + 'px'}}>
-                <div className="footer">
-                    <p>Website designed by Luka Mircetic 2020</p>
-                </div>
-            </Row>
+            <Row style={{marginLeft: -100 + 'px', marginTop: 0 + 'px'}}>
+            <div className="footer">
+                <p>Website designed by Luka Mircetic 2020</p>
+            </div>
+        </Row>
 
         </Container>
 )
