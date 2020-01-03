@@ -1,0 +1,116 @@
+.prog-header-image {
+    background: url(assets/coding.jpg);
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: 0;
+    text-align: center;
+    
+    width: px;
+    height: 180px;
+}
+
+.h10 {
+    padding-top: 25px;
+    margin-left:0px;
+    font-size: 75px;
+    font-family: Verdana;
+    font-weight: 700;
+    color: white;
+}
+
+h11 {
+    margin-left: 15px;
+}
+
+h12 {
+    text-align: center;
+    font-size: 55px;
+    margin-top: -67px;
+    margin-left: 500px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h13 {
+    font-size: 37px;
+    margin-left: -530px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+h14 {
+    font-size: 20px;
+    margin-left: 500px;
+    margin-top: 90px;
+    text-align: left;
+}
+.flappy-image {
+    height: 200px;
+    width: auto;
+    margin-left: 15px;
+    margin-top: 6em;
+}
+
+.vis-image {
+    height: 295px;
+    margin-left: 15px;
+}
+
+.flies-image {
+    height: 480px;
+    width: 480px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    margin-left: 650px;
+
+}
+
+.nt-image {
+    margin-top: 150px;
+    margin-left: 15px;
+    width: 500px;
+}
+/* Arrows */
+
+.dog-image {
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 500px;
+}
+
+
+.icon-arrows-small::after,
+.icon-arrows-small::before {
+  content: none;
+}
+.icon-arrows-small span,
+.icon-arrows-small::after,
+.icon-arrows-small::before {
+	display: block;
+	width: 1.0em;
+	height: 1.0em;
+	border-right: 3px solid rgba(0,0,0,0.8);
+	border-bottom: 3px solid rgba(0,0,0,.8);
+	margin: 0 0 0.125em 0.315em;
+	transform: rotate(45deg);
+    animation: mouse-scroll 1s infinite;
+	animation-direction: alternate;
+}
+
+.icon-arrows-up-single::after,
+.icon-arrows-up-single::before {
+  content: none;
+}
+.icon-arrows-up-single span,
+.icon-arrows-up-single::after,
+.icon-arrows-up-single::before {
+	display: block;
+	width: 2.0em;
+	height: 2.0em;
+	border-right: 3px solid rgba(0,0,0,0.8);
+	border-bottom: 3px solid rgba(0,0,0,.8);
+	margin: 0 0 0.125em 0.315em;
+	transform: rotate(225deg);
+    animation: mouse-scroll 1s infinite;
+	animation-direction: alternate;
+}
