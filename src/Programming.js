@@ -42,7 +42,7 @@ export const Programming = () => (
             <Image src={FImage} className="flappy-image" />
             <h13>Javascript</h13>
             <h14>Flappy Bird Game and Neural Net</h14>
-            <Button onClick={() => {window.location.href="/Flappy"} }
+            <Button onClick={() => {window.location.href="https://lukamircetic.github.io/flappybirdneuralnet/"} }
             type = "button"
             buttonStyle = "btn--flappy"
             buttonSize = "btn--medium"
@@ -75,7 +75,7 @@ export const Programming = () => (
             <Row>
                 <Image src={SImage} className="vis-image"/>
                 <h14 style={{marginLeft: 170 + 'px', marginTop: 50 + 'px'}}>A* Pathfinding Visualizer</h14>
-                <Button onClick={() => {window.location.href="/astar"} }
+                <Button onClick={() => {window.location.href="https://lukamircetic.github.io/PathfindingVisualizer/"} }
                     type = "button"
                     buttonStyle = "btn--flappy--2"
                     buttonSize = "btn--medium"
