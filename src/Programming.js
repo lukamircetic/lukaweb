@@ -49,7 +49,10 @@ export const Programming = () => (
             >
             Go to Flappy Bird
             </Button>
-            <Button type = "button" buttonStyle="btn--flappy--github" buttonSize="btn--extra--small"></Button>
+            <Button onClick={() => {window.location.href="https://github.com/lukamircetic/flappybirdneuralnet"} }
+                type = "button" 
+                buttonStyle="btn--flappy--github" 
+                buttonSize="btn--extra--small"></Button>
             <Button 
             type="button" 
             buttonStyle = "btn--primary--outline2"
@@ -79,7 +82,12 @@ export const Programming = () => (
                     >
                     Go to A* Visualizer
                 </Button>
-                <Button type = "button" buttonStyle="btn--flappy--github2" buttonSize="btn--extra--small"></Button> 
+                
+                <Button onClick={() => {window.location.href="https://github.com/lukamircetic/PathfindingVisualizer"} } 
+                    type = "button" 
+                    buttonStyle="btn--flappy--github2" 
+                    buttonSize="btn--extra--small">
+                </Button>
             </Row>
             <Row>
                 <Image src={DImage} className="flies-image"/>
@@ -104,15 +112,24 @@ export const Programming = () => (
                 </div>
                 </Link>
             </Button>
-            <Button type = "button" buttonStyle="btn--flappy--github3" buttonSize="btn--extra--small"></Button> 
-            <Button type = "button" buttonStyle="btn--flies--yt" buttonSize="btn--extra--small"></Button> 
+            <Button onClick={() => {window.location.href="https://github.com/lukamircetic/flies"} }  
+                type = "button" 
+                buttonStyle="btn--flappy--github3" 
+                buttonSize="btn--extra--small"></Button> 
+            <Button onClick={() => {window.location.href="https://www.youtube.com/watch?v=SDjFII4YaU8"} }
+                type = "button" 
+                buttonStyle="btn--flies--yt" 
+                buttonSize="btn--extra--small"></Button> 
             </Row>
             <Row>
             <Image src={NImage} className="nt-image" />
             <h13 id="section2" style={{marginLeft: -500 + 'px', marginTop: 60 + 'px'}}>Python</h13>
             <h14 style={{marginTop: 160 +'px', marginLeft: 600 + 'px'}}>Numbers Pytorch</h14>
             <p style={{marginLeft: 535 + 'px', textAlign: "right", marginTop: -230 + 'px'}}>Neural network in Pytorch that can distinguish between handwritten numbers</p>
-            <Button type = "button" buttonStyle="btn--flappy--github4" buttonSize="btn--extra--small"></Button>
+            <Button onClick={() => {window.location.href="https://github.com/lukamircetic/numberspytorch"} }
+                type = "button" 
+                buttonStyle="btn--flappy--github4" 
+                buttonSize="btn--extra--small"></Button>
             <Button 
             type="button" 
             buttonStyle = "btn--primary--outline4"
@@ -136,7 +153,10 @@ export const Programming = () => (
                 <Image src={ZImage} className="dog-image"/>
                 <h14 style={{marginLeft: 170 + 'px', marginTop: 50 + 'px'}}>Dogs vs Cats Neural Network</h14>
                 <p style={{marginTop: -250 + 'px', textAlign: "center", marginLeft: 520 + 'px'}}>Neural network in Pytorch that learns to disinguish between dog and cat images at an accuracy of around 75% </p>
-                <Button type = "button" buttonStyle="btn--flappy--github5" buttonSize="btn--extra--small"></Button> 
+                <Button onClick={() => {window.location.href="https://github.com/lukamircetic/DogsVsCatsNeuralNetwork"} }
+                    type = "button" 
+                    buttonStyle="btn--flappy--github5" 
+                    buttonSize="btn--extra--small"></Button> 
             </Row>
             <Row>
                 <h13 id="section4" style={{marginLeft: 425 + 'px', marginTop: 200 + 'px'}}>Projects Overview</h13>
