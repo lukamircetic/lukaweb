@@ -114,3 +114,5 @@ export const Projects = () => (
 
     </Container>
 )
+
+/* Developed By Luka Mircetic 2020 */
