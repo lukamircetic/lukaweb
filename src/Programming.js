@@ -42,7 +42,7 @@ export const Programming = () => (
             <Image src={FImage} className="flappy-image" />
             <h13>Javascript</h13>
             <h14>Flappy Bird Game and Neural Net</h14>
-            <Button onClick={() => {window.location.href="/flappy"} }
+            <Button onClick={() => {window.location.href="/Flappy"} }
             type = "button"
             buttonStyle = "btn--flappy"
             buttonSize = "btn--medium"

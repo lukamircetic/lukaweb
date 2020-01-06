@@ -18,7 +18,7 @@ const Styles = styled.div`
 
 export const NavigationBar = () => (
     <Styles>
-        <Navbar collapseOnSelect expand="lg" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="black" variant="dark">
             <Navbar.Brand href="/">
                 <img
                     src={gif}
@@ -43,7 +43,7 @@ export const NavigationBar = () => (
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <NavDropdown title="Projects" id="collapsible-nav-dropdown">
+                            <NavDropdown title="Projects">
                                 <Nav.Link>
                                     <Link to="/projects">Projects Home</Link>
                                 </Nav.Link>

@@ -12,6 +12,7 @@ import { Jumbotron } from './components/Jumbotron';
 import { Biomedical } from './Biomedical';
 import { Other } from './Other';
 import Social from './components/Social'
+import { Flappy } from './Flappy';
 function App() {
   return (
     <React.Fragment>
@@ -28,7 +29,9 @@ function App() {
               <Route path="/programming" component={Programming} />
               <Route path="/biomedical" component={Biomedical} />
               <Route path="/other" component={Other} />
+              <Route path="/flappy" component={Flappy} />
               <Route component={NoMatch} />
+
             </Switch>
           </Layout>
         </Router>
