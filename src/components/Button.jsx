@@ -18,6 +18,7 @@ const STYLES = [
     "btn--prog--all",
     "btn--flappy",
     "btn--flappy--2",
+    "btn--flappy--tf",
     "btn--flappy--github",
     "btn--flappy--github2",
     "btn--flappy--github3",

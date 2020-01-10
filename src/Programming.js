@@ -53,6 +53,13 @@ export const Programming = () => (
                 type = "button" 
                 buttonStyle="btn--flappy--github" 
                 buttonSize="btn--extra--small"></Button>
+            <Button onClick={() => {window.location.href="https://lukamircetic.github.io/flappybirdneuralnet/tensorflowflappy"} }
+            type = "button"
+            buttonStyle = "btn--flappy--tf"
+            buttonSize = "btn--medium"
+            >
+            Tensorflow Version
+            </Button>
             <Button 
             type="button" 
             buttonStyle = "btn--primary--outline2"

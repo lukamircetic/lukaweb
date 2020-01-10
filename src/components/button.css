@@ -74,8 +74,8 @@
 .btn--primary--outline2 {
     background-color: var(--transparent);
     color: var(--black);
-    margin-left: -910px;
-    margin-top: -275px;
+    margin-left: -835px;
+    margin-top: -285px;
     margin-bottom: 300px; 
     /* margin-right: 834px; */
     display: inline-block;
@@ -142,6 +142,18 @@
     box-sizing: border-box;
     /* box-shadow: -3px 3px 1px rgba(0,0,0,0.5); */
 }
+.btn--flappy--tf {
+    background-color: var(--transparent);
+    color: var(--black);
+    margin-left: 695px;
+    margin-right:60px;
+    margin-top: -50px;
+    margin-bottom: 80px;
+    border: 0.05em solid #000000;
+    display: inline-block;
+    box-sizing: border-box;
+    /* box-shadow: -3px 3px 1px rgba(0,0,0,0.5); */
+}
 .btn--flappy--2 {
     background-color: var(--transparent);
     color: var(--black);
@@ -162,6 +174,11 @@
 .btn--flappy--2:hover {
     transform: translateY(-3px);
     background-color: var(--transparent);
+    /* text-shadow: 0 0 2em rgba(0,0,0,1); */
+}
+.btn--flappy--tf:hover {
+    transform: translateY(-3px);
+    background-color: #FFDB58;
     /* text-shadow: 0 0 2em rgba(0,0,0,1); */
 }
 .btn--flappy--github {
