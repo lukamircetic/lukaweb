@@ -34,6 +34,7 @@
     "react-social-icons": "^4.1.0",
     "sass": "^1.24.0",
     "serve": "^11.2.0",
+    "simplehttpserver": "^0.3.0",
     "styled-components": "^4.4.1",
     "styled-icons": "^9.1.0",
     "typed.js": "^2.0.11"
