@@ -10,7 +10,6 @@ import NImage from './assets/numtorch.png';
 import ZImage from './assets/dogs.png';
 import CitImage from './assets/cities.png';
 import CalImage from './assets/calendar.png';
-// import Table from 'react-bootstrap/Table'
 import {FontAwesomeIcon}from '@fortawesome/react-fontawesome';
 import {
     faGithub,
@@ -24,66 +23,66 @@ export const Programming = () => (
         <body>
             <h className='soft-title'>Software Projects</h>
             <div className='sw-btn-tray'>
+                <Link 
+                    activeClass="active"
+                    to="section1"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={1000}
+                    >
                 <button className='js-btn'>
-                    <Link 
-                        activeClass="active"
-                        to="section1"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={1000}
-                    >
                     Javascript
-                    </Link>
                 </button>
+                </Link>
+                <Link 
+                    activeClass="active"
+                    to="section2"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={1000}
+                    >
                 <button className='py-btn'>
-                    <Link 
-                        activeClass="active"
-                        to="section2"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={1000}
-                    >
                     Python
-                    </Link>
                 </button>
+                </Link>
+                <Link 
+                    activeClass="active"
+                    to="section3"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={1000}
+                    >
                 <button className='c-btn'>
-                    <Link 
-                        activeClass="active"
-                        to="section3"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={1000}
-                    >
                     C/C++
-                    </Link>
                 </button>
+                </Link>
+                <Link 
+                    activeClass="active"
+                    to="section4"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={1000}
+                >
                 <button className='j-btn'>
-                    <Link 
-                        activeClass="active"
-                        to="section4"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={1000}
-                    >
                     Java
-                    </Link>
                 </button>
+                </Link>
+                <Link 
+                    activeClass="active"
+                    to="section5"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={1000}
+                >
                 <button className='o-btn'>
-                    <Link 
-                        activeClass="active"
-                        to="section5"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={1000}
-                    >
                     Other
-                    </Link>
                 </button>
+                </Link>
             </div>
             <div>
                 <div className='soft-body'>
@@ -188,71 +187,6 @@ export const Programming = () => (
                     </div>
                 </div>
             </div>
-            
         </body>
-                //     <Row style={{marginTop: 20 + 'px'}}>
-        //         <Table bordered responsive variant="dark">
-        //             <thead>
-        //                 <tr>
-        //                     <th>Project</th>
-        //                     <th>Language (Platform//Framework)</th>
-        //                     <th>Source Code</th>
-        //                     <th>Date</th>
-        //                 </tr>
-        //             </thead>
-        //             <tbody>
-        //                 <tr>
-        //                     <td>Handwritten Numbers NN</td>
-        //                     <td>Python (PyTorch)</td>
-        //                     <td>
-        //                         <a href="https://github.com/lukamircetic/numberspytorch">Link</a>
-        //                     </td>
-        //                     <td>12/12/2019</td>
-        //                 </tr>
-        //                 <tr>
-        //                     <td>DogsVsCats NN</td>
-        //                     <td>Python (PyTorch)</td>
-        //                     <td>
-        //                         <a href="https://github.com/lukamircetic/DogsVsCatsNeuralNetwork">Link</a>
-        //                     </td>
-        //                     <td>22/12/2019</td>
-        //                 </tr>
-        //                 <tr>
-        //                     <td>lukaweb (personal website)</td>
-        //                     <td>Javascript (React-Bootstrap)</td>
-        //                     <td>
-        //                         <a href="https://github.com/lukamircetic/lukaweb">Link</a>
-        //                     </td>
-        //                     <td>25/12/2019</td>
-        //                 </tr>
-        //                 <tr>
-        //                     <td>Flies.ai</td>
-        //                     <td>Java (Processing)</td>
-        //                     <td>
-        //                         <a href="https://github.com/lukamircetic/flies">Link</a>
-        //                     </td>
-        //                     <td>27/12/2019</td>
-        //                 </tr>
-        //                 <tr>
-        //                     <td>A* Pathfinding Visualizer</td>
-        //                     <td>Javascript (P5.js)</td>
-        //                     <td>
-        //                         <a href="https://github.com/lukamircetic/PathfindingVisualizer">Link</a>
-        //                     </td>
-        //                     <td>30/12/2019</td>
-        //                 </tr>
-        //                 <tr>
-        //                     <td>Flappy Bird Game and Neural Net</td>
-        //                     <td>Javascript (P5.js)</td>
-        //                     <td>
-        //                         <a href="https://github.com/lukamircetic/flappybirdneuralnet">Link</a>
-        //                     </td>
-        //                     <td>01/01/2020</td>
-        //                 </tr>
-        //                 <tr>
-                            
-        //                 </tr>
-        //             </tbody>
-        //         </Table>
-        //     </Row>
+
 )

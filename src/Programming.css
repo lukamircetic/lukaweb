@@ -1,6 +1,17 @@
+:root{
+    --js-height: 960px;
+    --python-height: 960px;
+    --c-height: 960px;
+    --java-height: 960px;
+    --box-width: 1000px;
+    --inner-box-width: 950px;
+    --inner-box-height: 387px;
+    --box-tm: 260px;
+}
+
 .soft-body{
     width: 100%;
-    height: 200%;
+    height: 560%;
     min-width: 100%;
     min-height: 100%;
     position: absolute;
@@ -17,20 +28,19 @@
     position: absolute;
     left: 50%;
     margin-left: -205px;
-    top: 10%;
+    top: 75px;
 }
 
 .sw-btn-tray{
-    width: 80%;
-    height: 7%;
+    width: var(--box-width);
+    height: 70px;
     position: absolute;
-    top: 20%;
-    left: 10%;
+    top: 200px;
+    left: 50%;
+    margin-left:-500px;
     z-index: 4;
     background: var(--bg);
     border-radius: 10px;
-    /* box-shadow: inset;
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -77,12 +87,12 @@
 }
 
 .js-box{
-    margin-top: 12%;
+    margin-top: 260px;
     margin-bottom: 10em;
-    width: 80%;
+    width: 1000px;
     height: var(--js-height);
-    left:10%;
-    top: 15%;
+    left:50%;
+    margin-left: -500px;
     position: absolute;
     background: #FED766;
     border-radius: 10px;
@@ -90,14 +100,14 @@
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
 .py-box{
-    margin-top: 15%;
-    top: var(--js-height);
-    margin-bottom: 10em;
-    width: 80%;
-    height: var(--python-height);
-    left:10%;
-    top: 123%;
     position: absolute;
+    margin-top: var(--box-tm);
+    top: calc(var(--js-height) + 100px);
+    margin-bottom: 10em;
+    height: var(--python-height);
+    width: var(--box-width);
+    left:50%;
+    margin-left: -500px;
     background: #009FB7;
     border-radius: 10px;
     box-shadow: inset;
@@ -105,12 +115,13 @@
 }
 
 .c-box{
-    margin-top: 15%;
+    margin-top: var(--box-tm);
     margin-bottom: 10em;
-    width: 80%;
     height: var(--c-height);
-    left:10%;
-    top: 237%;
+    width: var(--box-width);
+    left:50%;
+    margin-left: -500px;
+    top: calc(var(--js-height) + var(--python-height) + 100px + 60px);
     position: absolute;
     background: #87B6A7;
     border-radius: 10px;
@@ -119,11 +130,12 @@
 }
 
 .j-box{
-    margin-top: 15%;
-    width: 80%;
+    margin-top: var(--box-tm);
     height: var(--java-height);
-    left:10%;
-    top: 350%;
+    width: var(--box-width);
+    left:50%;
+    margin-left: -500px;
+    top: calc(var(--js-height) + var(--python-height) + var(--c-height) + 220px);
     position: absolute;
     background: #fcaf58;
     border-radius: 10px;
@@ -132,25 +144,18 @@
 }
 
 .o-box{
-    margin-top: 15%;
-    width: 80%;
+    margin-top: var(--box-tm);
+    width: 1000px;
     height: var(--java-height);
-    left:10%;
-    top: 463%;
+    left: 50%;
+    margin-left: -500px;
+    top: calc(var(--js-height) + var(--python-height) + var(--c-height) + var(--java-height) + 280px);
     position: absolute;
     background: #937D64;
     border-radius: 10px;
     box-shadow: inset;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
-
-:root{
-    --js-height: 100%;
-    --python-height: 100%;
-    --c-height: 100%;
-    --java-height: 100%;
-}
-
 
 /*Javascript*/
 .js-box-title{
@@ -163,8 +168,8 @@
 }
 
 .top-box{
-    width: 95%;
-    height: 40%;
+    width: var(--inner-box-width);
+    height: var(--inner-box-height);
     background: var(--bg);
     position: absolute;
     left: 2.5%;
@@ -262,8 +267,8 @@
 }
 
 .bot-box{
-    width: 95%;
-    height: 40%;
+    width: var(--inner-box-width);
+    height: var(--inner-box-height);
     background: var(--bg);
     position: absolute;
     left: 2.5%;
@@ -429,6 +434,8 @@
     background-color: #87B6A7;
 }
 
+/*Java*/
+
 .flies-img {
     object-fit: cover;
     object-position: bottom;
@@ -452,6 +459,8 @@
     margin-top: -40px;
 }
 
+/*Other*/
+
 .cal-img {
     object-fit: cover;
     object-position: left;
@@ -460,3 +469,6 @@
     margin-left: 4%;
     margin-top: 45px;
 }
+
+/*Table*/
+
