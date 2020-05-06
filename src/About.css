@@ -322,6 +322,7 @@
      margin-bottom: 50px;
      position: relative;
      transition: 2s ease;
+     padding-top: 30px;
    }
 
    .timeline .event:last-of-type {
@@ -334,6 +335,7 @@
      position: absolute;
      display: block;
      top: 0;
+     
    }
    .timeline .event:before {
      color: rgba(255, 255, 255, 0.4);

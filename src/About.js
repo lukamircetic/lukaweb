@@ -1,11 +1,10 @@
 import React from 'react'
-import LImage from './assets/luka.png';
+import LImage from './assets/luka2.jpg';
 import BBImage from './assets/lukabball.png';
 import BImage from './assets/neuralinkneedle.jpg';
-import SWimage from './assets/projectshome.jpg';
-import OImage from './assets/hardware.jpg';
+import SWimage from './assets/projects-home2.jpg';
+import OImage from './assets/hardware3.jpg';
 import './About.css';
-
 export const About = () => (
     <body>
     <h className='about-title'>About me</h>
