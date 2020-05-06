@@ -1,14 +1,7 @@
 import React from 'react'
 import LImage from './assets/luka.png';
 import BBImage from './assets/lukabball.png';
-import Image from 'react-bootstrap/Image';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import BImage1 from './assets/Biomed2.jpg';
 import BImage from './assets/neuralinkneedle.jpg';
-import CImage from './assets/sit.png';
-import DImage from './assets/elec.jpg';
 import SWimage from './assets/projectshome.jpg';
 import OImage from './assets/hardware.jpg';
 import './About.css';
