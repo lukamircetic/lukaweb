@@ -10,11 +10,11 @@ import NImage from './assets/numtorch.png';
 import ZImage from './assets/dogs.png';
 import CitImage from './assets/cities.png';
 import CalImage from './assets/calendar.png';
-import Table from 'react-bootstrap/Table'
+// import Table from 'react-bootstrap/Table'
 import {FontAwesomeIcon}from '@fortawesome/react-fontawesome';
 import {
     faGithub,
-    faYoutube
+    // faYoutube
 } from "@fortawesome/free-brands-svg-icons"
 const scrollToTop = () => {
     scroll.scrollToTop(); 
