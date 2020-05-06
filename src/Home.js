@@ -1,12 +1,4 @@
 import React from 'react'
-import Limage from './assets/LUKA.jpg';
-import Bimage from './assets/Biomed2.jpg';
-import Cimage from './assets/coding.jpg';
-import Image from 'react-bootstrap/Image';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
-import ReactRotatingText from 'react-rotating-text';
 import './Home.css';
 export const Home = () => (
     <body>
