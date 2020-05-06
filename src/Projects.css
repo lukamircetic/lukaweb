@@ -47,6 +47,7 @@ h4 {
     padding-left: 180px;
     text-align: right;
     float: right;
+    color: white;
     
 }
 
@@ -56,12 +57,14 @@ h5 {
     text-align: right;
     margin-top: -24em;
     font-weight: 400;
+    color: white;
 }
 
 h6 {
     margin-top: -19em;
     margin-left: 14px;
     font-size: 24px;
+    color: white;
 }
 
 h7 {
@@ -70,6 +73,7 @@ h7 {
     margin-top: -19em;
     margin-left: 14px;
     margin-right: 25em;
+    color: white;
 }
 
 h8 {
@@ -77,6 +81,7 @@ h8 {
     font-weight: 500;
     margin-top: 40px;
     margin-left: 440px;
+    color: white;
 }
 
 h9 {
@@ -84,6 +89,7 @@ h9 {
     text-align: right;
     margin-top: -20em;
     margin-left: 640px;
+    color: white;
     
 }
 

@@ -1,8 +1,10 @@
 import React from 'react'
-
+import './Other.css';
 export const Other = () => (
-    <div>
-        <h2>Other Projects</h2>
-        <p>Under Construction</p>
+    <div className='body-other'>
+    <div className='ct-box'>
+    <h className='other-title'>Other Projects</h>
+    <p className='other-text'>This Page is still under development</p>
     </div>
+</div>
 )

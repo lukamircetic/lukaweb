@@ -1,21 +1,34 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+import './Contact.css';
+import {FontAwesomeIcon}from '@fortawesome/react-fontawesome';
+import {
+    faTwitter,
+    faGithub,
+    faLinkedin,
+    
+} from "@fortawesome/free-brands-svg-icons"
+
+import {
+    faInbox
+} from "@fortawesome/free-solid-svg-icons";
 export const Contact = () => (
-    <Container>
-        <Row>
-        <h2 style={{marginTop: 100 + 'px', marginLeft: 400 + 'px', fontSize: 90 + 'px' }}>Contact</h2>
-        <h14 style={{marginLeft:280 + 'px'}}>For business, job or collaboration opportunities feel free to email me at</h14>
-        <h2 style={{marginTop: 100 + 'px', marginLeft: 450 + 'px', fontSize: 20 + 'px'}}>luka.mircetic@gmail.com</h2>
-        </Row>
-        <Row>
-            <h14 style={{marginLeft:457 + 'px'}}>Or reach out on social media!</h14>
-        </Row>
-        <Row style={{marginLeft: -100 + 'px', marginTop: 100 + 'px'}}>
-            <div className="footer">
-                <p>Website designed by Luka Mircetic 2020</p>
-            </div>
-        </Row>
-    </Container>
-        
-        
+    
+    <div className='body-contact'>
+        <div className='ct-box'>
+            <h className='contact-title'>Get In Touch</h>
+            <h className='contact-text'>For business, job or collaboration opportunities feel free to email me or reach me on social media</h>
+            <div className='mid-bar'/>
+            <div className='btn-tray'>
+                <button className='email-btn'>
+                <FontAwesomeIcon icon={faInbox} size="lg" color='#dadce1'className='email-icon'/>
+                <a href='#'>luka.mircetic@gmail.com</a></button>
+                <button className='twitter-btn'>
+                <FontAwesomeIcon icon={faTwitter} size="lg" color='#dadce1' className='twitter-icon'/>
+                    <a href='#'>@lukamircetic</a></button>
+                <button className='github-btn'>
+                <FontAwesomeIcon icon={faGithub} size="lg" color='#dadce1' className='gh-icon'/>
+                <a href='#'>lukamircetic</a></button>
+        </div>
+        </div> 
+    </div>
 )

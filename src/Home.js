@@ -9,34 +9,18 @@ import Container from 'react-bootstrap/Container';
 import ReactRotatingText from 'react-rotating-text';
 import './Home.css';
 export const Home = () => (
-    <Container>   
-    <Row>
-        <div>
-            <Container>
-                <Row>
-                    <Col xs={12} md={4} className="person-wrapper">
-                        <Image src={Bimage} alt="Biomedical Engineering" roundedCircle fluid/>
-                    </Col>
-                    <Col xs={12} md={4}>
-                        <Image src={Cimage} alt="Coding" roundedCircle fluid/>
-                    </Col>
-                    <Col xs={12} md={4}>
-                        <Image src={Limage} alt="Basketball" roundedCircle fluid/>
-                    </Col>
-                </Row>
-                <Row className="justify-content-md-center">
-                    <div className="rotating-text">
-                        <p>
-                        <ReactRotatingText items={['Biomedical Engineering', 'Software Development', 'Basketball']}/>
-                        </p>
-                    </div>
-                </Row>
-            </Container>
-
-        </div>
-    </Row>
-    <div id="react-root"></div>
-    </Container>
-
-    
+    <body>
+        <p className='biomed-text'>Biomedical Engineering</p>
+        <p className='soft-text'>Software Development</p>
+        <p className='fn-text'>Luka</p>
+        <p className='ln-text'>Mircetic</p>
+        <a href="/about" className="animated-button1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Enter
+        </a>
+        
+    </body>
 );
