@@ -36,7 +36,6 @@ import { ClickAwayListener } from '@material-ui/core';
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
-              <Route path="/projects" component={Projects} />
               <Route path="/gallery" component={Gallery} />
               <Route path="/contact" component={Contact} />
               <Route path="/programming" component={Programming} />
