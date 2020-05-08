@@ -22,13 +22,13 @@
 .soft-title{
     color: var(--text-colour);
     font-family: 'Manrope', sans-serif;
-    font-weight: 500;
-    font-size: 50px;
+    font-weight: 600;
+    font-size: 100px;
     z-index: 4;
     position: absolute;
     left: 50%;
-    margin-left: -205px;
-    top: 75px;
+    margin-left: -450px;
+    top: 55px;
 }
 
 .sw-btn-tray{
@@ -470,5 +470,48 @@
     margin-top: 45px;
 }
 
-/*Table*/
+/*Sidebar*/
 
+.sw-side-btn-tray{
+    width: 70px;
+    height: var(--box-width);
+    position: absolute;
+    top: 200px;
+    right: 5%;
+    z-index: 4;
+    background: var(--bg);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sw-btn-tray button{
+    font-family: 'Manrope', sans-serif;
+    width: 150px;
+    height: 40px;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    border: none;
+}
+
+.js-btn{
+    background-color: #FED766;
+}
+
+.py-btn{
+    background-color: #009FB7;
+}
+
+.c-btn{
+    background-color: #87B6A7;
+}
+
+.j-btn{
+    background-color: #fcaf58;
+}
+
+.o-btn{
+    background-color: #937D64;
+}

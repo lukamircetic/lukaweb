@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect, useRef, useState } from 'react'
 import './Programming.css';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import Image from 'react-bootstrap/Image';
@@ -15,9 +15,7 @@ import {
     faGithub,
     // faYoutube
 } from "@fortawesome/free-brands-svg-icons"
-const scrollToTop = () => {
-    scroll.scrollToTop(); 
-};
+
 
 export const Programming = () => (
         <body>
@@ -84,6 +82,7 @@ export const Programming = () => (
                 </button>
                 </Link>
             </div>
+            {/* <SideNav/> */}
             <div>
                 <div className='soft-body'>
                 </div>
@@ -190,3 +189,87 @@ export const Programming = () => (
         </body>
 
 )
+
+
+
+
+const scrollToTop = () => {
+    scroll.scrollToTop(); 
+};
+
+// function ScrollNav () {
+//     return (<div className='sw-side-btn-tray'>
+//                 <Link 
+//                     activeClass="active"
+//                     to="section1"
+//                     spy={true}
+//                     smooth={true}
+//                     offset={-70}
+//                     duration={1000}
+//                     >
+//                 <button className='js-btn'>
+//                     Javascript
+//                 </button>
+//                 </Link>
+//                 <Link 
+//                     activeClass="active"
+//                     to="section2"
+//                     spy={true}
+//                     smooth={true}
+//                     offset={-70}
+//                     duration={1000}
+//                     >
+//                 <button className='py-btn'>
+//                     Python
+//                 </button>
+//                 </Link>
+//                 <Link 
+//                     activeClass="active"
+//                     to="section3"
+//                     spy={true}
+//                     smooth={true}
+//                     offset={-70}
+//                     duration={1000}
+//                     >
+//                 <button className='c-btn'>
+//                     C/C++
+//                 </button>
+//                 </Link>
+//                 <Link 
+//                     activeClass="active"
+//                     to="section4"
+//                     spy={true}
+//                     smooth={true}
+//                     offset={-70}
+//                     duration={1000}
+//                 >
+//                 <button className='j-btn'>
+//                     Java
+//                 </button>
+//                 </Link>
+//                 <Link 
+//                     activeClass="active"
+//                     to="section5"
+//                     spy={true}
+//                     smooth={true}
+//                     offset={-70}
+//                     duration={1000}
+//                 >
+//                 <button className='o-btn'>
+//                     Other
+//                 </button>
+//                 </Link>
+//             </div>);
+// }
+
+// function SideNav() {
+//     var isTopVisible = window.pageYOffset;
+//     console.log(window.pageYOffset);
+//     if (isTopVisible) {
+//         return <ScrollNav/>
+//     }
+//     else{
+//         return null;
+//     }
+// }
+
