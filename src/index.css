@@ -162,7 +162,6 @@ a:hover {
   position: absolute;
   left: 50%;
   margin-left: -520px;
-  z-index: 4;
 }
 
 body {
