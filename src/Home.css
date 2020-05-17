@@ -47,12 +47,14 @@ p {
 }
 .biomed-text {
     /* color: #81a4cd; */
-    color: #dadce1;
-    font-size: 100px;
+    /* color: #dadce1; */
+    color: var(--bg);
+    font-size: 300px;
+    font-weight: 1000;
     position: absolute;
     margin-top: 70px;
     width: 50%;
-    max-width: 50%;
+    max-width: 700px;
     right: 50%;
     word-wrap: break-word;
     line-height: 1em;
@@ -67,45 +69,30 @@ p {
 
 
 .soft-text {
-    color: #dadce1;
-    /* color: #92140C; */
-    /* color: #ffcf99; */
-    /* color: #cc2936; */
-    /* color: #81a4cd; */
-    font-size: 90px;
+    color: #5B5B59;
+    /* color: #A29C9B; */
+    font-size: 300px;
+    font-weight: 800;
     position: absolute;
     width: 50%;
-    max-width: 50%;
-    left: 50%;
+    max-width: 700px;
+    left: 52%;
     word-wrap: break-word;
     line-height: 1em;
-    top: 50%;
-    margin-top: 200px;
-    text-align: right;
+    margin-top: 70px;
+    text-align: justify;
     animation: 1s ease-out 0s 1 slideInFromRight;
     
 }
 
 .fn-text {
   color: #ffcf99;
-  font-size: 120px;
+  font-size: 150px;
   position: absolute;
-  top: 50%;
-  margin-top: -100px;
-  word-spacing: 200px;
-  right: 50%;
-  margin-right: 100px;
-  animation: 1s ease 0s 1 fadeIn;
-}
-.ln-text {
-  color: #ffcf99;
-  font-size: 120px;
-  position: absolute;
-  top: 50%;
-  margin-top: -100px;
-  word-spacing: 200px;
+  top: 300px;
   left: 50%;
-  margin-left: 100px;
+  font-weight: 200;
+  margin-left: -390px;
   animation: 1s ease 0s 1 fadeIn;
 }
 
@@ -115,7 +102,7 @@ p {
   position: fixed;
   margin-left: -85px;
   left: 50%;
-  top: 50%;
+  top: 700px;
   margin-top: -30px;
   display: inline-block;
   -webkit-transform: translate(0%, 0%);

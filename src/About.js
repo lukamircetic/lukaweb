@@ -30,7 +30,7 @@ export const About = () => (
             <div className='info'>
                 <h1>Biomedical</h1>
                 <p>Mostly comprised of my school projects, but I am interested in developing some neural networks that are related to the medical field</p>
-                <button>Check them out!</button>
+                <a href='/biomedical'><button>Check them out!</button></a>
             </div>
         </div>
         <div className='biomed-card'>
@@ -38,7 +38,7 @@ export const About = () => (
             <div className='info'>
                 <h1>Software</h1>
                 <p>At the moment I am focusing on creating projects in Python, Java and C++ with a focus on neural networks and automation as well as some games on the side.</p>
-                <button>Check them out!</button>
+                <a href='/programming'><button>Check them out!</button></a>
             </div>
         </div>
         <div className='biomed-card'>
@@ -46,7 +46,7 @@ export const About = () => (
             <div className='info'>
                 <h1>Other</h1>
                 <p>Other projects that I wish to complete in the future such as electrical engineering projects with the Raspberry Pi. I also enjoy building Computer's.</p>
-                <button>Check them out!</button>
+                <a href='/other'><button>Check them out!</button></a>
             </div>
         </div>
     </div>

@@ -30,7 +30,7 @@
     margin-top: 100px;
     border-radius: 50%;
     position: absolute;
-    top: 110%;
+    top: 1200px;
     left: 50%;
     margin-left: 50px;
     transition: 300ms ease;
@@ -46,8 +46,9 @@
     font-size: 30px;
     position: absolute;
     margin-top: 100px;
-    top: 95%;
-    right: 7.5%;
+    top: 1100px;
+    right: 50%;
+    margin-right: -550px;
     animation: 1s ease-out 0s 1 slideInFromRight;
 }
 .bb-text{
@@ -57,10 +58,11 @@
     /* font-family: 'Manrope', sans-serif; */
     color: var(--text-colour);
     position: absolute;
-    top: 125%;
-    left: 80%;
-    margin-right: -50px;
-    right: 7.5%;
+    top: 1350px;
+    left: 50%;
+    margin-left: 350px;
+    right: 50%;
+    margin-right: -550px;
     animation: 1s ease-out 0s 1 slideInFromRight;
     text-align: right;
 }
@@ -72,7 +74,8 @@
     font-size: 30px;
     position: absolute;
     margin-top: 100px;
-    left: 7.5%;
+    left: 50%;
+    margin-left: -550px;
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 .about-text {
@@ -82,10 +85,11 @@
     /* font-family: 'Manrope', sans-serif; */
     color: var(--text-colour);
     position: absolute;
-    top: 22%;
-    right: 70%;
-    margin-right: -50px;
-    left: 7.5%;
+    top: 275px;
+    right: 50%;
+    margin-right: 160px;
+    left: 50%;
+    margin-left: -550px;
     animation: 1s ease-out 0s 1 slideInFromLeft;
 
 }
@@ -97,29 +101,18 @@
         font-size: 30px;
         position: absolute;
         margin-top: 100px;
-        right: 7.5%;
+        right: 50%;
+        margin-right: -550px;
         animation: 1s ease-out 0s 1 slideInFromRight;
 }
 
-.exp-text{
-    font-family: monospace;
-    /* font-family: 'Manrope', sans-serif; */
-    color: var(--text-colour);
-    position: absolute;
-    top: 22%;
-    left: 70%;
-    margin-left: -50px;
-    right: 7.5%;
-    text-align: left;
-    animation: 1s ease-out 0s 1 slideInFromRight;
-}
 .avatar{
     border-radius: 50%;
     height: 300px;
     position: absolute;
     left: 50%;
     margin-left: -150px;
-    top: 20%;
+    top: 250px;
     animation: 1s ease 0s 1 fadeIn;
     transition: 300ms ease;
 }
@@ -133,13 +126,14 @@
     width: 2px;
     background-color: var(--text-colour);
     position: absolute;
-    left: 92%;
-    top: 22%;
+    right: 50%;
+    margin-right: -552px;
+    top: 275px;
 }
 
 .project-bar{
     position: absolute;
-    top: 60%;
+    top: 700px;
     left: 0%;
     display: flex;
     width: 100%;
@@ -152,7 +146,7 @@
     color: var(--text-colour);
     font-size: 30px;
     position: absolute;
-    top: 55%;
+    top: 620px;
     left: 50%;
     margin-left: -52px;
     animation: 1s ease-out 0s 1 slideInFromBottom;
@@ -277,9 +271,9 @@
    }
    #timeline-content {
     position: absolute; 
-    top: 110%;
-    left: 7%;
-    /* width:100%; */
+    top: 1250px;
+    left: 50%;
+    margin-left: -550px;
     text-align: center;
    }
    .timeline {
@@ -363,9 +357,10 @@
     color: var(--text-colour);
     font-size: 30px;
     position: absolute;
-    top: 95%;
+    top: 1100px;
     margin-top: 100px;
-    left: 7%;
+    left: 50%;
+    margin-left: -550px;
     animation: 1s ease-out 0s 1 slideInFromRight;
 }
 
@@ -380,9 +375,9 @@
     margin: 0;
     font-family: 'Manrope', sans-serif;
     position: absolute;
-    left: 92%;
-    margin-left: -350px;
-    top: 22%;
+    right: 50%;
+    margin-right: -550px;
+    top: 275px;
     text-align: right;
     display: flex;
     flex-direction: column;
