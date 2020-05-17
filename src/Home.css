@@ -99,10 +99,10 @@ p {
 .animated-button1 {
   background: linear-gradient(-30deg, #3d0b0b 50%, #2b0808 50%);
   padding: 15px 50px;
-  position: fixed;
+  position: absolute;
   margin-left: -85px;
   left: 50%;
-  top: 700px;
+  top: 600px;
   margin-top: -30px;
   display: inline-block;
   -webkit-transform: translate(0%, 0%);
