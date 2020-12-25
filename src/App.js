@@ -16,33 +16,30 @@ import { ReactComponent as PlusIcon } from './icons/plus.svg';
 import { ReactComponent as CogIcon } from './icons/cog.svg';
 import { ReactComponent as ChevronIcon } from './icons/chevron.svg';
 import gif from './assets/dribbling.gif';
+import lmLogo from './assets/lm.jpeg';
 import { ClickAwayListener } from '@material-ui/core';
 
   function App(){
   return (
     <React.Fragment>
         <Router basename="/">
-         <Navbar>
-           <NavTitle logo={gif}>Luka Mircetic</NavTitle>
-           <Link className="nav-item" to="/about"><NavItem href="/" icon="About"/></Link>
-           <Link className="nav-item" to="/gallery"><NavItem icon="Gallery"/></Link>
-           <Link className="nav-item" to="/contact"><NavItem icon="Contact"/></Link>
-           <NavItem icon="Projects">
-            <DropdownMenu/>
-           </NavItem>
-         </Navbar>
-          <Social/>
+         <div className="nav-container">
+          <Navbar>
+            <NavTitle logo={lmLogo}>Luka Mircetic</NavTitle>
+            <Link className="nav-item" to="/programming"><NavItem icon="Software"/></Link>
+            <Link className="nav-item" to="/biomedical"><NavItem icon="Biomedical"/></Link>
+            <Link className="nav-item" to="/contact"><NavItem icon="Contact"/></Link>
+          </Navbar>
+         </div>
           <Layout>
             <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/about" component={About} />
+              <Route exact path="/" component={About} />
               <Route path="/gallery" component={Gallery} />
               <Route path="/contact" component={Contact} />
               <Route path="/programming" component={Programming} />
               <Route path="/biomedical" component={Biomedical} />
               <Route path="/other" component={Other} />
               <Route component={NoMatch} />
-
             </Switch>
           </Layout>
         </Router>
@@ -61,7 +58,7 @@ function Navbar(props) {
 function NavTitle(props){
   return (
     <li className='nav-title'>
-      <img className='nav-img' src={gif}/>
+      {/* <img className='nav-img' src={lmLogo}/> */}
       <a href="/">
       {props.children}
       </a>

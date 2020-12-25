@@ -25,6 +25,12 @@
     
 }
 
+/* .intro-section {
+    height: 100vh;
+    background: url("assets/intro.jpg") no-repeat top center;
+    background-size: cover;
+    z-index: 2;
+} */
 .lukabball-img {
     height: 300px;
     margin-top: 100px;
@@ -1102,3 +1108,61 @@
     }
   }
 
+
+
+
+.short-intro-container {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    z-index: 0;
+}
+
+.short-intro-section {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    font-family: 'Manrope';
+}
+
+.short-intro-name {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.short-intro-description {
+    font-size: 26px;
+}
+
+.background-about {
+    background: url('assets/ecg-vector.svg') no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.email-link {
+    display: inline-block;
+    text-decoration-skip-ink: auto;
+    color: var(--sixth-col);
+    background-color: transparent;
+    border: 1px solid var(--sixth-col);
+    border-radius: 4px;
+    padding: 1.25rem 1.75rem;
+    font-size: 14px;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    margin-top: 50px;
+}
+
+.email-link:hover {
+    color: var(--sixth-col);
+    background-color: rgba(129,164,205, 0.1);
+}
