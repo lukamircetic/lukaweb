@@ -5,7 +5,7 @@ import BImage from './assets/neuralinkneedle.jpg';
 import SWimage from './assets/projects-home2.jpg';
 import OImage from './assets/hardware3.jpg';
 import './About.css';
-import ecgVector from './assets/ecg-vector.svg';
+import downArrow  from './assets/sort-down.svg';
 export const About = () => (
     <body>
         <div className="background-about">
@@ -15,14 +15,31 @@ export const About = () => (
                         Luka Mircetic
                     </div>
                     <div className="short-intro-description">
-                        Learning software and biomedical engineering through my studies and my own personal projects.  
+                        Learning software and biomedical engineering through my studies and personal projects.  
                     </div>
                     <div classname="">
                         <a class="email-link" href="mailto:luka.mircetic@gmail.com">Get in Touch</a>
                     </div>
                 </div>
+                <div className="read-more-container">
+                    <div className="read-more-title">
+                        More about me
+                    </div>
+                    <button className="read-more-button">
+                        <img src={downArrow} className="read-more-arrow"></img>
+                    </button>
+                </div>
             </div>
         </div>
+        <div className="main-section">
+            <div className="main-section-top">
+                <div className="section-title-left">ABOUT ME</div>
+            </div>
+            <div classname="main-content">
+
+            </div>
+        </div>
+
     </body>
     // <body>
     // <h className='about-title'>About me</h>

@@ -22,7 +22,7 @@
     --line: 4px;
     --font-title: 'Saira', sans-serif;
     --font-text: 'Chivo', sans-serif;
-    
+    --test-col: #FF715B; /* #980B64  BB0A21 FFC857 D00000*/
 }
 
 /* .intro-section {
@@ -1112,9 +1112,10 @@
 
 
 .short-intro-container {
-    height: 50vh;
+    height: 75vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     background-color: transparent;
     z-index: 0;
@@ -1131,8 +1132,10 @@
 }
 
 .short-intro-name {
-    font-size: 55px;
+    font-size: 65px;
     font-weight: 600;
+    letter-spacing: 7px;
+    /* text-shadow: 3px 3px #1f1f1f; */
 }
 
 .short-intro-description {
@@ -1149,9 +1152,9 @@
 .email-link {
     display: inline-block;
     text-decoration-skip-ink: auto;
-    color: var(--sixth-col);
+    color: white;
     background-color: transparent;
-    border: 1px solid var(--sixth-col);
+    border: 1px solid white;
     border-radius: 4px;
     padding: 1.25rem 1.75rem;
     font-size: 14px;
@@ -1163,6 +1166,141 @@
 }
 
 .email-link:hover {
-    color: var(--sixth-col);
-    background-color: rgba(129,164,205, 0.1);
+    color: white;
+    background-color: rgba(255,113,91, 0.4);
+    border: 1px solid var(--test-col);
+}
+
+.read-more-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    color: white;
+    font-family: 'Manrope';
+}
+
+.read-more-button {
+    background-color: transparent;
+    border: none;
+    margin-top: 15px;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+}
+
+.read-more-button:focus {
+    outline: none;
+}
+.read-more-arrow {
+    width: 30px;
+    height: 30px;
+}
+
+.main-section {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Manrope';
+}
+
+.main-section-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media screen and (min-width: 1250px) {
+    .section-title-left {
+        width: 100%;
+        font-size: 40px;
+        color: white;
+        letter-spacing: 7px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-shadow: 2px 2px var(--test-col); /* #1f1f1f */
+    }
+    .section-title-left::after {
+        content: "";
+        display: block;
+        position: relative;
+        width: 800px;
+        height: 1px;
+        background-color: var(--test-col);
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1250px) {
+    .section-title-left {
+        width: 100%;
+        font-size: 35px;
+        color: white;
+        letter-spacing: 7px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .section-title-left::after {
+        content: "";
+        display: block;
+        position: relative;
+        width: 600px;
+        height: 1px;
+        background-color: var(--test-col);
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 475px) and (max-width: 1000px) {
+    .section-title-left {
+        width: 100%;
+        font-size: 28px;
+        color: white;
+        letter-spacing: 7px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .section-title-left::after {
+        content: "";
+        display: block;
+        position: relative;
+        width: 50%;
+        height: 1px;
+        background-color: var(--test-col);
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .section-title-left {
+        width: 100%;
+        font-size: 22px;
+        color: white;
+        letter-spacing: 7px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .section-title-left::after {
+        content: "";
+        display: block;
+        position: relative;
+        width: 50%;
+        height: 1px;
+        background-color: var(--test-col);
+        margin-left: 20px;
+    }
 }

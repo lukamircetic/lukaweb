@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;800&display=swap');
 :root{
-  --bg: #1f1f1f;
+  --bg: #4C5B5C; /* 1f1f1f */
   --bg-accent: #484a4d;
   --text-colour: #dadce1;
   --nav-size: 40px;
@@ -87,12 +87,13 @@ a:hover {
 }
 
 .nav-item {
-  width: 110px;
+  /* width: 110px; */
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  transition: all 300ms;
 }
 
 .nav-title {
@@ -124,11 +125,12 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: filter 300ms;
+  transition: all 300ms;
 }
 
-.icon-button:hover {
-  filter: brightness(1.2)
+.nav-item:hover {
+  filter: brightness(1.2);
+  background-color: rgba(76,91,92, 0.2);
 }
 
 .icon-button svg {
@@ -168,7 +170,7 @@ a:hover {
 }
 
 .drop-button {
-  --button-size:var(--nav-size));
+  --button-size:var(--nav-size);
   width: var(--button-size)*2;
   height: var(--button-size);
   border-radius: 50%;
