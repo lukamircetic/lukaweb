@@ -35,11 +35,84 @@ export const About = () => (
             <div className="main-section-top">
                 <div className="section-title-left">ABOUT ME</div>
             </div>
-            <div classname="main-content">
-
+            <div className="about-section">
+            <div className="main-content">
+                <div className="main-content-text">
+                    <div className="main-content-section">
+                        Hi, I'm Luka, a software and biomedical engineering student at McMaster University.
+                        I have a passion for developing cool software applications and engineering medical devices. 
+                    </div>
+                    <div className="main-content-section">
+                        Most of my experience is in web development but I am also interested in picking up artifical intelligence such as deep learning.
+                    </div>
+                    <div className="main-content-section">
+                        For the past 8 months, I worked at CIBC where I worked on multiple applications that were used country-wide.
+                    </div>
+                    <div className="main-content-section">
+                        When I'm not hacking away you can usually find me on the court playing for the McMaster Men's Basketball team.
+                    </div>
+                    <div className="main-content-section">
+                        Here are some framework and technologies that I am familiar with:
+                    </div>
+                </div>
+                <div className="main-content-pics">
+                    <div className="profile-picture">
+                        <img className="avatar" src={LImage} />
+                    </div>
+                    <div className="bball-picture">
+                        <img src={BBImage} className='lukabball-img'/>
+                    </div>
+                </div>
+            </div>
+            <div className="skills-content">
+                    <div className="skills-list-languages">
+                        <div className="list-title">Languages</div>
+                        <ul className="lang-list">
+                            <li>Javascript</li>
+                            <li>Python</li>
+                            <li>C/C++</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                    <div className="skills-list">
+                        <div className="list-title">Web Development</div>
+                        <ul className="skills-list-ul">
+                            <li>React</li>
+                            <li>MongoDB</li>
+                            <li>Node.js</li>
+                            <li>OracleDB</li>
+                            <li>Typescript</li>
+                            <li>Flask</li>
+                            <li>HTML and CSS</li>
+                            <li>Jest</li>
+                        </ul>
+                    </div>
+                    <div className="skills-list">
+                        <div className="list-title">Data and Visualization</div>
+                        <ul className="skills-list-ul">
+                            <li>Tensorflow</li>
+                            <li>Pytorch</li>
+                            <li>Processing.js</li>
+                            <li>Numpy</li>
+                            <li>Matplotlib</li>
+                            <li>OpenCV</li>
+                            <li>Pandas</li>
+                        </ul>
+                    </div>
+                    <div className="skills-list">
+                        <div className="list-title">Hardware</div>
+                        <ul className="skills-list-ul">
+                            <li>Verilog</li>
+                            <li>AutoDesk</li>
+                            <li>Raspberry Pi</li>
+                            <li>3D Printing</li>
+                            <li>Arduino</li>
+                            <li>Soldering</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-
     </body>
     // <body>
     // <h className='about-title'>About me</h>
