@@ -2,6 +2,7 @@ import React from 'react'
 import LImage from './assets/luka2.jpg';
 import BBImage from './assets/lukabball.png';
 import calIMG from './assets/calendarview.png';
+import flappy from './assets/flappyview.png';
 import BImage from './assets/neuralinkneedle.jpg';
 import SWimage from './assets/projects-home2.jpg';
 import OImage from './assets/hardware3.jpg';
@@ -114,7 +115,7 @@ export const About = () => (
                 </div>
             </div>
         </div>
-        <div className="main-section">
+        <div className="main-section" style={{ height: "125vh"}}>
             <div className="main-section-top">
                 <div className="featured-title-left">FEATURED PROJECTS</div>
             </div>
@@ -150,30 +151,26 @@ export const About = () => (
             </div>
             <div className="project-container">
                 <div className="feature-container">
-                    <img className="feature-pic" src={calIMG}/>
+                    <img className="feature-pic" src={flappy}/>
                 </div>
                 <div className="description-container-right">
                     <div className="project-title">
-                        Calendar To-Do
+                        Flappy Bird ML
                     </div>
                     <div className="description-section">
-                        <p className="project-description">Google Keep and Google Calendar were missing something, so I combined them! Full stack application which organizes your to-do lists by date.</p>
+                        <p className="project-description">One of the games I spent hours on and could never get the best score, so I decided to recreate it and train a neural network to do it for me!</p>
                     </div>
                     <div className="description-section">
                         <h2 className="features-title">Technical Features</h2>
                         <ul>
-                            <li>login and authentication system for users to save their lists for future use</li>
-                            <li>website backend for handling routes and requests</li>
-                            <li>connected to the cloud using MongoDB Atlas</li>
+                            <li>Developed game using the Processing.js framework</li>
+                            <li>Used reinforcement learning to train two different models for the neural network</li>
                         </ul>
                     </div>
                         <div className="project-frameworks">
                             <ul>
-                                <li>Svelte</li>
-                                <li>Node.js</li>
-                                <li>Express</li>
-                                <li>MongoDB</li>
-                                <li>Heroku</li>
+                                <li style={{ flex: "0 0 50%"}}>Processing.js</li>
+                                <li style={{ flex: "0 0 50%"}}>Tensorflow.js</li>
                             </ul>
                     </div>
                 </div>
