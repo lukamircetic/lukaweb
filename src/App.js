@@ -26,8 +26,8 @@ import { ClickAwayListener } from '@material-ui/core';
          <div className="nav-container">
           <Navbar>
             <NavTitle logo={lmLogo}>Luka Mircetic</NavTitle>
-            <Link className="nav-item" to="/programming"><NavItem icon="Software"/></Link>
-            <Link className="nav-item" to="/biomedical"><NavItem icon="Biomedical"/></Link>
+            <Link className="nav-item" to="/programming"><NavItem icon="About"/></Link>
+            <Link className="nav-item" to="/biomedical"><NavItem icon="Projects"/></Link>
             <Link className="nav-item" to="/contact"><NavItem icon="Contact"/></Link>
           </Navbar>
          </div>

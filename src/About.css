@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Saira+Extra+Condensed:100,200,300,400,500,600,700,800|Saira:100,200,300,400,500,600,700,800");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 @import url("http://fonts.cdnfonts.com/css/arial-nova");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
 :root {
   --py-bar-width: 325px;
   --java-bar-width: 300px;
@@ -128,6 +131,27 @@
   align-items: center;
 }
 
+.featured-title-left::after {
+  content: "";
+  display: block;
+  position: relative;
+  /* width: 19%; */
+  height: 1px;
+  background-color: var(--test-col);
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.section-title-left::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 1px;
+  background-color: var(--test-col);
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
 @media screen and (min-width: 1200px) {
   .section-title-left {
     width: 100%;
@@ -139,16 +163,9 @@
     flex-direction: row;
     justify-content: flex-start;
     text-shadow: 2px 2px var(--test-col); /* #1f1f1f */
+    flex: 0 0 100%;
   }
-  .section-title-left::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 800px;
-    height: 1px;
-    background-color: var(--test-col);
-    margin-left: 20px;
-  }
+
   .featured-title-left {
     width: 100%;
     font-size: 40px;
@@ -159,15 +176,7 @@
     flex-direction: row;
     justify-content: flex-start;
     text-shadow: 2px 2px var(--test-col); /* #1f1f1f */
-  }
-  .featured-title-left::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 540px;
-    height: 1px;
-    background-color: var(--test-col);
-    margin-left: 20px;
+    flex: 0 0 100%;
   }
   .main-content {
     display: flex;
@@ -251,16 +260,9 @@
     flex-direction: row;
     justify-content: flex-start;
     text-shadow: 2px 2px var(--test-col); /* #1f1f1f */
+    flex: 0 0 100%;
   }
-  .featured-title-left::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 395px;
-    height: 1px;
-    background-color: var(--test-col);
-    margin-left: 20px;
-  }
+
   .section-title-left {
     width: 100%;
     font-size: 35px;
@@ -271,16 +273,7 @@
     flex-direction: row;
     justify-content: flex-start;
     text-shadow: 2px 2px var(--test-col); /* #1f1f1f */
-  }
-
-  .section-title-left::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 650px;
-    height: 1px;
-    background-color: var(--test-col);
-    margin-left: 20px;
+    flex: 0 0 100%;
   }
 
   .main-content {
@@ -363,16 +356,7 @@
     flex-direction: row;
     justify-content: flex-start;
     text-shadow: 2px 2px var(--test-col); /* #1f1f1f */
-  }
-
-  .section-title-left::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 50%;
-    height: 1px;
-    background-color: var(--test-col);
-    margin-left: 20px;
+    flex: 0 0 100%;
   }
 
   .main-content {
@@ -455,16 +439,7 @@
     flex-direction: row;
     justify-content: flex-start;
     text-shadow: 2px 2px var(--test-col); /* #1f1f1f */
-  }
-
-  .section-title-left::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 50%;
-    height: 1px;
-    background-color: var(--test-col);
-    margin-left: 20px;
+    flex: 0 0 100%;
   }
 
   .main-content {
@@ -572,7 +547,7 @@
   }
 
   .skills-list li {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     color: white;
     font-size: 14px;
     padding-bottom: 5px;
@@ -587,7 +562,7 @@
     color: var(--test-col);
   }
   .skills-list-languages li {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     color: white;
     font-size: 14px;
     padding-bottom: 5px;
@@ -646,7 +621,23 @@
     align-items: flex-end;
     flex: 0 0 40%;
   }
+  .feature-container {
+    flex: 0 0 50%;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 
+  .feature-container-right {
+    flex: 0 0 50%;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
   .feature-pic {
     height: 435px;
     width: 625px;
@@ -734,7 +725,7 @@
     box-shadow: 0 10px 30px -15px #1f1f1f;
   }
   .project-frameworks ul {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     font-size: 13px;
     display: flex;
     flex-direction: row;
@@ -744,7 +735,6 @@
   .project-frameworks li {
     flex: 0 0 20%;
     text-align: center;
-    font-weight: 600;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -762,7 +752,7 @@
   }
 
   .skills-list li {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     color: white;
     font-size: 12px;
     padding-bottom: 5px;
@@ -778,7 +768,7 @@
   }
 
   .skills-list-languages li {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     color: white;
     font-size: 12px;
     padding-bottom: 5px;
@@ -840,6 +830,13 @@
     flex: 0 0 50%;
   }
   .feature-container {
+    flex: 0 0 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .feature-container-right {
     flex: 0 0 50%;
     height: 100%;
     display: flex;
@@ -943,7 +940,7 @@
     box-shadow: 0 10px 30px -15px #1f1f1f;
   }
   .project-frameworks ul {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     font-size: 13px;
     display: flex;
     flex-direction: row;
@@ -953,7 +950,6 @@
   .project-frameworks li {
     flex: 0 0 20%;
     text-align: center;
-    font-weight: 600;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 991px) {
@@ -967,15 +963,7 @@
     flex-direction: row;
     justify-content: flex-start;
     text-shadow: 2px 2px var(--test-col); /* #1f1f1f */
-  }
-  .featured-title-left::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 38%;
-    height: 1px;
-    background-color: var(--test-col);
-    margin-left: 20px;
+    flex: 0 0 100%;
   }
   .main-content-section {
     color: #fff;
@@ -998,7 +986,7 @@
   }
 
   .skills-list li {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     color: white;
     font-size: 12px;
     padding-bottom: 5px;
@@ -1013,7 +1001,7 @@
     color: var(--test-col);
   }
   .skills-list-languages li {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     color: white;
     font-size: 12px;
     padding-bottom: 5px;
@@ -1075,6 +1063,14 @@
     flex: 0 0 50%;
   }
   .feature-container {
+    flex: 0 0 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .feature-container-right {
     flex: 0 0 50%;
     height: 100%;
     display: flex;
@@ -1185,7 +1181,7 @@
     /* box-shadow: 0 10px 30px -15px #1f1f1f; */
   }
   .project-frameworks ul {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     font-size: 13px;
     display: flex;
     flex-direction: row;
@@ -1195,7 +1191,6 @@
   .project-frameworks li {
     flex: 0 0 20%;
     text-align: center;
-    font-weight: 600;
   }
 }
 
@@ -1210,16 +1205,9 @@
     flex-direction: row;
     justify-content: flex-start;
     text-shadow: 2px 2px var(--test-col); /* #1f1f1f */
+    flex: 0 0 100%;
   }
-  .featured-title-left::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 19%;
-    height: 1px;
-    background-color: var(--test-col);
-    margin-left: 20px;
-  }
+
   .main-content-section {
     color: #fff;
     font-size: 14px;
@@ -1242,7 +1230,7 @@
   }
 
   .skills-list li {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     color: white;
     font-size: 12px;
     padding-bottom: 5px;
@@ -1257,7 +1245,7 @@
     color: var(--test-col);
   }
   .skills-list-languages li {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     color: white;
     font-size: 12px;
     padding-bottom: 5px;
@@ -1321,6 +1309,13 @@
     flex: 0 0 100%;
   }
   .feature-container {
+    flex: 0 0 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .feature-container-right {
     flex: 0 0 100%;
     height: 100%;
     display: flex;
@@ -1432,7 +1427,7 @@
     /* box-shadow: 0 10px 30px -15px #1f1f1f; */
   }
   .project-frameworks ul {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     font-size: 13px;
     display: flex;
     flex-direction: row;
@@ -1442,7 +1437,6 @@
   .project-frameworks li {
     flex: 0 0 20%;
     text-align: center;
-    font-weight: 600;
   }
 }
 
@@ -1457,16 +1451,8 @@
     flex-direction: row;
     justify-content: flex-start;
     text-shadow: 2px 2px var(--test-col); /* #1f1f1f */
+    flex: 0 0 100%;
   }
-  /* .featured-title-left::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 5%;
-    height: 1px;
-    background-color: var(--test-col);
-    margin-left: 20px;
-  } */
 
   .main-content-section {
     color: #fff;
@@ -1489,7 +1475,7 @@
   }
 
   .skills-list li {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     color: white;
     font-size: 12px;
     padding-bottom: 5px;
@@ -1504,7 +1490,7 @@
     color: var(--test-col);
   }
   .skills-list-languages li {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     color: white;
     font-size: 12px;
     padding-bottom: 5px;
@@ -1568,6 +1554,13 @@
     flex: 0 0 100%;
   }
   .feature-container {
+    flex: 0 0 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .feature-container-right {
     flex: 0 0 100%;
     height: 100%;
     display: flex;
@@ -1679,7 +1672,7 @@
     /* box-shadow: 0 10px 30px -15px #1f1f1f; */
   }
   .project-frameworks ul {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     font-size: 13px;
     display: flex;
     flex-direction: row;
@@ -1689,7 +1682,6 @@
   .project-frameworks li {
     flex: 0 0 20%;
     text-align: center;
-    font-weight: 600;
   }
 }
 
@@ -1705,15 +1697,6 @@
     justify-content: flex-start;
     text-shadow: 2px 2px var(--test-col); /* #1f1f1f */
   }
-  /* .featured-title-left::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 5%;
-    height: 1px;
-    background-color: var(--test-col);
-    margin-left: 20px;
-  } */
 
   .main-content-section {
     color: #fff;
@@ -1736,7 +1719,7 @@
   }
 
   .skills-list li {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     color: white;
     font-size: 12px;
     padding-bottom: 5px;
@@ -1751,7 +1734,7 @@
     color: var(--test-col);
   }
   .skills-list-languages li {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     color: white;
     font-size: 12px;
     padding-bottom: 5px;
@@ -1815,6 +1798,13 @@
     flex: 0 0 100%;
   }
   .feature-container {
+    flex: 0 0 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .feature-container-right {
     flex: 0 0 100%;
     height: 100%;
     display: flex;
@@ -1926,7 +1916,7 @@
     /* box-shadow: 0 10px 30px -15px #1f1f1f; */
   }
   .project-frameworks ul {
-    font-family: "Fira Code";
+    font-family: "Roboto Mono";
     font-size: 13px;
     display: flex;
     flex-direction: row;
@@ -1936,7 +1926,6 @@
   .project-frameworks li {
     flex: 0 0 20%;
     text-align: center;
-    font-weight: 600;
   }
 }
 /* add a thing for less than 475px */
@@ -2010,3 +1999,4 @@ a {
   font-size: 22px;
   padding-left: 30px;
 }
+

@@ -1,12 +1,9 @@
 import React from 'react'
+import ProjectsTable from './components/ProjectsTable/ProjectsTable';
 import LImage from './assets/luka2.jpg';
 import BBImage from './assets/lukabball.png';
 import calIMG from './assets/calendarview.png';
 import flappy from './assets/flappyview.png';
-import githubsvg from './assets/github.svg';
-import BImage from './assets/neuralinkneedle.jpg';
-import SWimage from './assets/projects-home2.jpg';
-import OImage from './assets/hardware3.jpg';
 import './About.css';
 import downArrow  from './assets/sort-down.svg';
 export const About = () => (
@@ -29,7 +26,7 @@ export const About = () => (
                         More about me
                     </div>
                     <button className="read-more-button">
-                        <img src={downArrow} className="read-more-arrow"></img>
+                        <img alt={"down arrow"}src={downArrow} className="read-more-arrow"></img>
                     </button>
                 </div>
             </div>
@@ -60,10 +57,10 @@ export const About = () => (
                 </div>
                 <div className="main-content-pics">
                     <div className="profile-picture">
-                        <img className="avatar" src={LImage} />
+                        <img alt={"Headshot"}className="avatar" src={LImage} />
                     </div>
                     <div className="bball-picture">
-                        <img src={BBImage} className='lukabball-img'/>
+                        <img alt={"Luka Basketball"}src={BBImage} className='lukabball-img'/>
                     </div>
                 </div>
             </div>
@@ -116,7 +113,7 @@ export const About = () => (
                 </div>
             </div>
         </div>
-        <div className="main-section" style={{ height: "175vh"}}>
+        <div className="main-section" style={{ height: "180vh"}}>
             <div className="main-section-top">
                 <div className="featured-title-left">FEATURED PROJECTS</div>
             </div>
@@ -125,10 +122,10 @@ export const About = () => (
                     <div className="project-title">
                         Calendar To-Do
                         <div className="links-container">
-                            <a href="https://github.com/lukamircetic/flappybirdneuralnet" target="_blank">
+                            <a href="https://github.com/lukamircetic/Calendar-ToDo" target="_blank" rel="noopener noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="41" width="25" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="link-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                             </a>
-                            <a href="https://lukamircetic.github.io/flappybirdneuralnet/" target="_blank">
+                            <a href="https://calendar-todo-luka.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="link-icon" width="25" height="41" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
                                     <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
@@ -158,21 +155,21 @@ export const About = () => (
                     </div>
                 </div>
                 <div className="feature-container">
-                    <img className="feature-pic" src={calIMG}/>
+                    <img alt={"Calendar To-Do Website"}className="feature-pic" src={calIMG}/>
                 </div>
             </div>
             <div className="project-container">
-                <div className="feature-container">
-                    <img className="feature-pic-right" src={flappy}/>
+                <div className="feature-container-right">
+                    <img alt={"Flappy Bird Game"}className="feature-pic-right" src={flappy}/>
                 </div>
                 <div className="description-container-right">
                     <div className="project-title-right">
                         Flappy Bird ML
                         <div className="links-container">
-                            <a className="icon-a" href="https://github.com/lukamircetic/Calendar-ToDo" target="_blank">
+                            <a className="icon-a" href="https://github.com/lukamircetic/flappybirdneuralnet" target="_blank" rel="noopener noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="41" width="25" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="link-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                             </a>
-                            <a className="icon-a" href="https://calendar-todo-luka.herokuapp.com/" target="_blank">
+                            <a className="icon-a" href="https://lukamircetic.github.io/flappybirdneuralnet/" target="_blank" rel="noopener noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="link-icon" width="25" height="41" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
                                     <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
@@ -202,17 +199,6 @@ export const About = () => (
                 <div className="description-container">
                     <div className="project-title">
                         AutoMute <span className="in-progress">(In Progress)</span>
-                        {/* <div className="links-container">
-                            <a href="https://github.com/lukamircetic/flappybirdneuralnet" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="41" width="25" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="link-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                            </a>
-                            <a href="https://lukamircetic.github.io/flappybirdneuralnet/" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="link-icon" width="25" height="41" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-                                </svg>
-                            </a>
-                        </div> */}
                     </div>
                     <div className="description-section">
                         <p className="project-description">Tool for popular video chat applications like Zoom, Discord and Teams, which automatically mutes your microphone if you sip water or someone walks into your room.</p>
@@ -236,79 +222,14 @@ export const About = () => (
                         <p style={{ fontWeight: "400"}}>automute</p>
                         <p style={{ fontWeight: "400", fontSize: "14px"}}>coming soon</p>
                     </div>
-                    {/* <img className="feature-pic" src={calIMG}/> */}
                 </div>
             </div>
         </div>
+        <div className="main-section" style={{ height: "150vh"}}>
+            <div className="main-section-top">
+                <div className="featured-title-left">ALL PROJECTS</div>
+            </div>
+            <ProjectsTable />
+        </div>
     </body>
-    // <body>
-    // <h className='about-title'>About me</h>
-    // <img className='avatar'src={LImage}/>
-    // <p className='about-text'>I am currently a second year student enrolled in Software and Biomedical Engineering at McMaster University. I have a passion for software development and engineering medical devices. This summer I am working as a Co-op Analytics Developer at CIBC.</p>
-    // <h className='exp-title'>Experience</h>
-    // <div className='bar'/>
-    // <ul className='skill-bar'>
-    //     <li className='skill-py'>Python</li>
-    //     <li className='skill-java'>Java</li>
-    //     <li className='skill-c'>C/C++</li>
-    //     <li className='skill-js'>Javascript</li>
-    //     <li className='skill-html'>HTML</li>
-    //     <li className='skill-css'>CSS</li>
-    //     <li className='skill-react'>React</li>
-    // </ul>
-
-    // <h className='proj-title'>Projects</h>
-    // <div className='project-bar'>
-    //     <div className='biomed-card'>
-    //         <img src={BImage} className='biomed-img'/>
-    //         <div className='info'>
-    //             <h1>Biomedical</h1>
-    //             <p>Mostly comprised of my school projects, but I am interested in developing some neural networks that are related to the medical field</p>
-    //             <a href='/biomedical'><button>Check them out!</button></a>
-    //         </div>
-    //     </div>
-    //     <div className='biomed-card'>
-    //         <img src={SWimage} className='biomed-img'/>
-    //         <div className='info'>
-    //             <h1>Software</h1>
-    //             <p>At the moment I am focusing on creating projects in Python, Java and C++ with a focus on neural networks and automation as well as some games on the side.</p>
-    //             <a href='/programming'><button>Check them out!</button></a>
-    //         </div>
-    //     </div>
-    //     <div className='biomed-card'>
-    //         <img src={OImage} className='biomed-img'/>
-    //         <div className='info'>
-    //             <h1>Other</h1>
-    //             <p>Other projects that I wish to complete in the future such as electrical engineering projects with the Raspberry Pi. I also enjoy building Computer's.</p>
-    //             <a href='/other'><button>Check them out!</button></a>
-    //         </div>
-    //     </div>
-    // </div>
-    // <h className='tl-title'>Work and Academics</h>
-    // <div id="timeline-content">
-    //     {/* <h1>Work and Academics</h1> */}
-    //     <ul className="timeline">
-    //         <li className="event" data-date="2019-Present">
-    //             <h3>McMaster University</h3>
-    //             <p>Software and Biomedical Engineering</p>
-    //         </li>
-    //         <li className="event" data-date="May 2020-Present">
-    //             <h3>CIBC</h3>
-    //             <p>Analytics Developer</p>
-    //             {/* <p>Job Highlights</p>     */}
-    //         </li>
-    //         {/* <li className="event" id="date" data-date="2009">
-    //             <h3>Squareflair was Born</h3>
-    //             <p>"We can be all things to Squarespace users!" 📣</p>    
-    //         </li> */}
-    //     </ul>
-    // </div>
-
-    // <h className='bb-title'>Basketball</h>
-    // <img src={BBImage} className='lukabball-img'/>
-    // <p className='bb-text'>Basketball has been a passion of mine since I was 5 years old and I am currently playing for the McMaster Men's Varsity Basketball Team</p>
-    
-    // </body>
-
-
 )
