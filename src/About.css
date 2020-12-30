@@ -533,6 +533,22 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .main-section-projects {
+    height: 1310px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Manrope";
+  }
+  .main-section-featured {
+    height: 1810px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Manrope";
+  }
   .skills-list {
     flex-basis: 28%;
   }
@@ -593,6 +609,12 @@
     list-style: outside none none;
   }
 
+  .contact-description {
+    flex: 0 0 50%;
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+  }
   /* Featured Projects section */
 
   .project-container {
@@ -735,9 +757,27 @@
   .project-frameworks li {
     flex: 0 0 20%;
     text-align: center;
+    color: #1f1f1f;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+  .main-section-projects {
+    height: 1370px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Manrope";
+  }
+
+  .main-section-featured {
+    height: 1710px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Manrope";
+  }
   .skills-list {
     flex-basis: 28%;
   }
@@ -799,6 +839,12 @@
     list-style: outside none none;
   }
 
+  .contact-description {
+    flex: 0 0 50%;
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+  }
   /* Featured Projects section */
 
   .project-container {
@@ -950,9 +996,28 @@
   .project-frameworks li {
     flex: 0 0 20%;
     text-align: center;
+    color: #1f1f1f;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 991px) {
+  .main-section-projects {
+    height: 1855px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Manrope";
+  }
+
+  .main-section-featured {
+    height: 1855px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Manrope";
+  }
+
   .featured-title-left {
     width: 100%;
     font-size: 28px;
@@ -1032,6 +1097,12 @@
     list-style: outside none none;
   }
 
+  .contact-description {
+    flex: 0 0 50%;
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+  }
   /* Featured Projects section */
 
   .project-container {
@@ -1191,10 +1262,27 @@
   .project-frameworks li {
     flex: 0 0 20%;
     text-align: center;
+    color: #1f1f1f;
   }
 }
 
 @media screen and (min-width: 575px) and (max-width: 767px) {
+  .main-section-projects {
+    height: 2775px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Manrope";
+  }
+  .main-section-featured {
+    height: 1415px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Manrope";
+  }
   .featured-title-left {
     width: 100%;
     font-size: 28px;
@@ -1275,7 +1363,12 @@
     overflow: hidden;
     list-style: outside none none;
   }
-
+  .contact-description {
+    flex: 0 0 50%;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+  }
   /* Featured Projects section */
 
   .project-container {
@@ -1437,10 +1530,27 @@
   .project-frameworks li {
     flex: 0 0 20%;
     text-align: center;
+    color: #1f1f1f;
   }
 }
 
 @media screen and (min-width: 475px) and (max-width: 575px) {
+  .main-section-projects {
+    height: 2850px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Manrope";
+  }
+  .main-section-featured {
+    height: 1464px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Manrope";
+  }
   .featured-title-left {
     width: 100%;
     font-size: 28px;
@@ -1521,6 +1631,12 @@
     list-style: outside none none;
   }
 
+  .contact-description {
+    flex: 0 0 50%;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+  }
   /* Featured Projects section */
 
   .project-container {
@@ -1682,6 +1798,7 @@
   .project-frameworks li {
     flex: 0 0 20%;
     text-align: center;
+    color: #1f1f1f;
   }
 }
 
@@ -1764,7 +1881,12 @@
     overflow: hidden;
     list-style: outside none none;
   }
-
+  .contact-description {
+    flex: 0 0 50%;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+  }
   /* Featured Projects section */
 
   .project-container {
@@ -1926,6 +2048,7 @@
   .project-frameworks li {
     flex: 0 0 20%;
     text-align: center;
+    color: #1f1f1f;
   }
 }
 /* add a thing for less than 475px */
@@ -1969,14 +2092,20 @@
   padding-right: 3px;
   color: var(--test-col);
 }
-.project-description {
+.project-decription {
   color: white;
   font-size: 15px;
   font-weight: 400;
   font-family: "Arial Nova";
   margin-bottom: 0;
 }
-
+p {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Arial Nova";
+  margin-bottom: 0;
+}
 .features-title {
   color: #faffd8;
   font-size: 18px;
@@ -2000,3 +2129,38 @@ a {
   padding-left: 30px;
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+
+.socials {
+  height: 100%;
+  flex: 0 0 50%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+.socials ul {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-top: 10px;
+  padding: 0;
+  overflow: hidden;
+  list-style: outside none none;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--text-colour);
+}
+
+.socials li:nth-child(odd) {
+  margin-right: 100px;
+}
+
+.socials a:hover {
+  color: #ff8370;
+}

@@ -94,6 +94,7 @@ header {
   font-family: "Roboto Mono";
   font-size: 12px;
   margin-bottom: 3px;
+  color: #1f1f1f;
 }
 .pl-lang-list li:not(:last-of-type) {
   margin-right: 15px;
