@@ -18,9 +18,9 @@ export const About = () => (
                     <div className="short-intro-description">
                         Learning software and biomedical engineering through my studies and personal projects.  
                     </div>
-                    <div classname="">
+                    {/* <div classname="">
                         <a class="email-link" href="mailto:luka.mircetic@gmail.com">Get in Touch</a>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="read-more-container">
                     <div className="read-more-title">
@@ -275,6 +275,9 @@ export const About = () => (
                     </ul>
                 </div>
             </div>
+        </div>
+        <div className="footer">
+            Designed and Coded by Luka Mircetic.
         </div>
     </body>
 )

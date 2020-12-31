@@ -51,7 +51,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
               spy={true}
               smooth={true}
               offset={-70}
-              duration={1000}
+              duration={1500}
               >
                 <NavItem icon="Contact"/>
             </Link>
