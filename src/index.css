@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;800&display=swap');
 :root{
-  --bg: #1f1f1f;
+  --bg: #4C5B5C; /* 1f1f1f */
   --bg-accent: #484a4d;
   --text-colour: #dadce1;
   --nav-size: 40px;
@@ -37,12 +37,41 @@ a:hover {
   text-decoration: none;
   color: var(--text-colour);
 }
+@media screen and (min-width: 1200px) {
+  .nav-container {
+    max-width: 1150px;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  .nav-container {
+    max-width: 950px;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .nav-container {
+    max-width: 650px;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .navbar {
   height: var(--nav-size);
-  background-color: var(--bg);
-  padding: 0 0.5rem;
-  /* border-bottom: var(--border); */
+  background-color: transparent;
+  height: 100px;
+  width: 100%;
 }
 
 .navbar-nav {
@@ -52,31 +81,57 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
+  background-color: transparent;
+  padding: 0rem 0.5rem;
 }
 
 .nav-item {
-  width: 75px;
+  /* width: 110px; */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  transition: all 300ms;
+}
+
+.nav-title {
+  width: 100%;
+  font-size: 20px;
+  line-height: 1.5;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--text-colour)
+}
+
+.nav-img{
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
 .icon-button {
-  --button-size: calc(var(--nav-size) * 0.7);
-  width: var(--button-size)*2;
-  height: var(--button-size);
-  /* background-color: #484a4d; */
-  background-color: var(--bg);
+  font-size: 18px;
+  line-height: 1.5;
+  height: 40px;
+  background-color: transparent;
   padding: 9px;
-  /* margin: px; */
+  padding-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: filter 300ms;
+  transition: all 300ms;
+  color: var(--text-colour)
 }
 
-.icon-button:hover {
-  filter: brightness(1.2)
+.nav-item:hover {
+  filter: brightness(1.2);
+  background-color: rgba(76,91,92, 0.2);
 }
 
 .icon-button svg {
@@ -116,7 +171,7 @@ a:hover {
 }
 
 .drop-button {
-  --button-size:var(--nav-size));
+  --button-size:var(--nav-size);
   width: var(--button-size)*2;
   height: var(--button-size);
   border-radius: 50%;
@@ -139,23 +194,7 @@ a:hover {
   height: 20px;
 }
 
-.nav-title {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    align-items: center;
-    padding-top: 5px;
-    color: var(--text-colour)
-    
-}
-.nav-img{
-  width: 40px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
+
 
 .social-tray {
   padding-top: 20px;
@@ -166,9 +205,11 @@ a:hover {
 
 body {
   margin: 0;
-  background: linear-gradient(to right, var(--primary-col) 0%,var(--primary-col) 50%,#000000 50%,var(--tertiary-col) 50%,var(--tertiary-col) 100%);
+  background-color: var(--bg);
+  color: white;
+  /* background: linear-gradient(to right, var(--primary-col) 0%,var(--primary-col) 50%,#000000 50%,var(--tertiary-col) 50%,var(--tertiary-col) 100%); */
   /* background: linear-gradient(170deg, rgba(49, 57, 73, 0.8) 20%, rgba(49, 57, 73, 0.5) 20%, rgba(49, 57, 73, 0.5) 35%, rgba(41, 48, 61, 0.6) 35%, rgba(41, 48, 61, 0.8) 45%, rgba(31, 36, 46, 0.5) 45%, rgba(31, 36, 46, 0.8) 75%, rgba(49, 57, 73, 0.5) 75%), linear-gradient(45deg, rgba(20, 24, 31, 0.8) 0%, rgba(41, 48, 61, 0.8) 50%, rgba(82, 95, 122, 0.8) 50%, rgba(133, 146, 173, 0.8) 100%) #313949; */
-  font-family: roboto;
+  font-family: "Manrope";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

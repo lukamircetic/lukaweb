@@ -1,51 +1,53 @@
 import React from 'react';
 import { useState } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import { Home } from './Home';
 import { About } from './About';
-import { Contact } from './Contact';
-import { NoMatch } from './NoMatch';
-import { Programming } from './Programming';
 import { Layout } from './components/layout';
-import { Biomedical } from './Biomedical';
-import { Other } from './Other';
-import { Gallery } from './Gallery';
-import Social from './components/Social'
 import { ReactComponent as PlusIcon } from './icons/plus.svg';
 import { ReactComponent as CogIcon } from './icons/cog.svg';
 import { ReactComponent as ChevronIcon } from './icons/chevron.svg';
-import gif from './assets/dribbling.gif';
 import { ClickAwayListener } from '@material-ui/core';
-
+import { Link, animateScroll as scroll } from 'react-scroll';
   function App(){
   return (
     <React.Fragment>
-        <Router basename="/">
-         <Navbar>
-           <NavTitle logo={gif}>Luka Mircetic</NavTitle>
-           <Link className="nav-item" to="/about"><NavItem href="/" icon="About"/></Link>
-           <Link className="nav-item" to="/gallery"><NavItem icon="Gallery"/></Link>
-           <Link className="nav-item" to="/contact"><NavItem icon="Contact"/></Link>
-           <NavItem icon="Projects">
-            <DropdownMenu/>
-           </NavItem>
-         </Navbar>
-          <Social/>
+         <div className="nav-container">
+          <Navbar>
+            <NavTitle>Luka Mircetic</NavTitle>
+            <Link 
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+              >
+                <NavItem icon="About"/>
+              </Link>
+            <Link 
+              activeClass="active"
+              to="featured"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+              >
+                <NavItem icon="Projects"/>
+              </Link>
+            <Link 
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1500}
+              >
+                <NavItem icon="Contact"/>
+            </Link>
+          </Navbar>
+         </div>
           <Layout>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/gallery" component={Gallery} />
-              <Route path="/contact" component={Contact} />
-              <Route path="/programming" component={Programming} />
-              <Route path="/biomedical" component={Biomedical} />
-              <Route path="/other" component={Other} />
-              <Route component={NoMatch} />
-
-            </Switch>
+              <About />
           </Layout>
-        </Router>
     </React.Fragment>
   );
 }
@@ -61,7 +63,6 @@ function Navbar(props) {
 function NavTitle(props){
   return (
     <li className='nav-title'>
-      <img className='nav-img' src={gif}/>
       <a href="/">
       {props.children}
       </a>
@@ -76,7 +77,7 @@ function NavItem(props){
   return(
     <ClickAwayListener onClickAway={handleClickAway}>
     <li className='nav-item'>
-      <a href="#" className='icon-button' onClick={() => setOpen(!open)}>
+      <a href={`/#${props.icon.toLowerCase()}`} className='icon-button' onClick={() => setOpen(!open)}>
         { props.icon }
       </a>
       
