@@ -1,22 +1,10 @@
 import React from 'react';
 import { useState } from 'react'
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
-// import { Home } from './Home';
 import { About } from './About';
-// import { Contact } from './Contact';
-import { NoMatch } from './NoMatch';
-// import { Programming } from './Programming';
 import { Layout } from './components/layout';
-// import { Biomedical } from './Biomedical';
-// import { Other } from './Other';
-// import { Gallery } from './Gallery';
-// import Social from './components/Social'
 import { ReactComponent as PlusIcon } from './icons/plus.svg';
 import { ReactComponent as CogIcon } from './icons/cog.svg';
 import { ReactComponent as ChevronIcon } from './icons/chevron.svg';
-// import gif from './assets/dribbling.gif';
-import lmLogo from './assets/lm.jpeg';
 import { ClickAwayListener } from '@material-ui/core';
 import { Link, animateScroll as scroll } from 'react-scroll';
   function App(){
@@ -24,7 +12,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
     <React.Fragment>
          <div className="nav-container">
           <Navbar>
-            <NavTitle logo={lmLogo}>Luka Mircetic</NavTitle>
+            <NavTitle>Luka Mircetic</NavTitle>
             <Link 
               activeClass="active"
               to="about"
@@ -75,7 +63,6 @@ function Navbar(props) {
 function NavTitle(props){
   return (
     <li className='nav-title'>
-      {/* <img className='nav-img' src={lmLogo}/> */}
       <a href="/">
       {props.children}
       </a>
