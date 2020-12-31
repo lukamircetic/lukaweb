@@ -125,6 +125,15 @@
   font-family: "Manrope";
 }
 
+.main-section-about {
+  height: 890px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Manrope";
+}
+
 .main-section-top {
   display: flex;
   flex-direction: row;
@@ -1536,6 +1545,7 @@
 }
 
 @media screen and (min-width: 475px) and (max-width: 575px) {
+
   .main-section-projects {
     height: 2850px;
     width: 100%;
@@ -2167,7 +2177,7 @@ a {
 }
 
 .footer {
-  font-family: 'Roboto Mono';
+  font-family: "Roboto Mono";
   display: flex;
   flex-direction: row;
   justify-content: center;

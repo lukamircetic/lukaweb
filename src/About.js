@@ -41,7 +41,7 @@ export const About = () => (
                 </div>
             </div>
         </div>
-        <div id="about" className="main-section">
+        <div id="about" className="main-section-about">
             <div className="main-section-top">
                 <div className="section-title-left">ABOUT ME</div>
             </div>
