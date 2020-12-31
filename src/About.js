@@ -6,6 +6,7 @@ import calIMG from './assets/calendarview.png';
 import flappy from './assets/flappyview.png';
 import './About.css';
 import downArrow  from './assets/sort-down.svg';
+import { Link, animateScroll as scroll } from 'react-scroll';
 export const About = () => (
     <body>
         <div className="background-about">
@@ -25,13 +26,22 @@ export const About = () => (
                     <div className="read-more-title">
                         More about me
                     </div>
-                    <button className="read-more-button">
-                        <img alt={"down arrow"}src={downArrow} className="read-more-arrow"></img>
-                    </button>
+                    <Link 
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={1000}
+                    >
+                        <button className="read-more-button">
+                            <img alt={"down arrow"}src={downArrow} className="read-more-arrow"></img>
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>
-        <div className="main-section">
+        <div id="about" className="main-section">
             <div className="main-section-top">
                 <div className="section-title-left">ABOUT ME</div>
             </div>
@@ -113,7 +123,7 @@ export const About = () => (
                 </div>
             </div>
         </div>
-        <div className="main-section-featured">
+        <div id="featured" className="main-section-featured">
             <div className="main-section-top">
                 <div className="featured-title-left">FEATURED PROJECTS</div>
             </div>
@@ -225,13 +235,13 @@ export const About = () => (
                 </div>
             </div>
         </div>
-        <div className="main-section-projects">
+        <div id="projects" className="main-section-projects">
             <div className="main-section-top">
                 <div className="featured-title-left">ALL PROJECTS</div>
             </div>
             <ProjectsTable />
         </div>
-        <div className="main-section" style={{ height: "600px"}}>
+        <div id="contact" className="main-section" style={{ height: "600px"}}>
             <div className="main-section-top">
                 <div className="featured-title-left">CONTACT</div>
             </div>

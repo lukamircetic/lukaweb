@@ -50,9 +50,10 @@
 }
 
 .short-intro-name {
-  font-size: 65px;
-  font-weight: 600;
+  font-size: 55px;
+  font-weight: 900;
   letter-spacing: 7px;
+  text-transform: uppercase;
   /* text-shadow: 3px 3px #1f1f1f; */
 }
 
