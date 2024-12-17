@@ -22,6 +22,7 @@ function Nav({ currPage, setPage }: NavProps) {
       "md:relative rounded-full md:mr-3 w-1 h-1 mt-1 md:mt-0 bg-primary scale-150 max-md:hidden",
     aCss: "transition-opacity text-base text-white",
   };
+
   return (
     <nav className="flex flex-row md:flex-col items-start relative max-md:justify-center">
       <div className="h-10 mb-12"></div>
