@@ -4,7 +4,7 @@ function About() {
   return (
     <div>
       <div className="flex flex-col md:flex-row space-x-8">
-        <div className="basis-1/2 max-w-prose max-sm:mb-6">
+        <div className="basis-1/2 max-w-prose max-[925px]:mb-6">
           <p className="max-sm:text-sm">
             I am a software engineer from Toronto with a background in web
             development and data engineering. Outside of work I love playing
