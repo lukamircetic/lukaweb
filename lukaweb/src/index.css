@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Roboto Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: @import
+            url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+    }
+}
+
+body {
+    @apply font-mono;
+    @apply bg-primary;
+    @apply m-0;
+    @apply text-whitetext;
+}

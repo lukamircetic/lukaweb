@@ -13,19 +13,19 @@ function Nav({ currPage, setPage }: NavProps) {
   ];
   const activeNavItem = {
     divCss:
-      "md:relative rounded-full md:mr-2 w-1 h-1 mt-1 md:mt-0 bg-black scale-125",
-    aCss: "transition-opacity text-sm text-black",
+      "md:relative rounded-full md:mr-3 w-1 h-1 mt-1 md:mt-0 bg-secondary scale-150 max-sm:hidden",
+    aCss: "transition-opacity text-base text-secondary font-bold",
   };
 
   const inactiveNavItem = {
     divCss:
-      "md:relative rounded-full md:mr-2 w-1 h-1 mt-1 md:mt-0 bg-white scale-125",
-    aCss: "transition-opacity text-sm text-black",
+      "md:relative rounded-full md:mr-3 w-1 h-1 mt-1 md:mt-0 bg-primary scale-150 max-sm:hidden",
+    aCss: "transition-opacity text-base text-white",
   };
   return (
-    <nav className="flex flex-row md:flex-col items-start relative">
+    <nav className="flex flex-row md:flex-col items-start relative max-sm:justify-center">
       <div className="h-10 mb-12"></div>
-      <div className="flex flex-row md:flex-col space-x-4 md:space-x-0 pr-10">
+      <div className="flex flex-row md:flex-col space-x-4 md:space-x-0 md:pr-10">
         {pages.map((page, index) => (
           <div
             className="flex flex-col md:flex-row text-sm py-1 items-center"
