@@ -1,7 +1,11 @@
-async function Reading() {
-  // const response = await fetch("https://mojecitanje.lukamircetic.ca/articles");
-  // const data = response.json();
-  // console.log(data);
+import { useReading } from "./ReadingContext";
+
+function Reading() {
+  const { articles, isLoading, error } = useReading();
+
+  if (isLoading) return <div>Loading articles... </div>;
+  if (error) return <div>Error loading articles, please try again later </div>;
+  console.log(articles);
   return <div>My Reading List</div>;
 }
 
