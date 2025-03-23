@@ -7,13 +7,13 @@ interface NavProps {
 
 function Nav({ currPage, setPage }: NavProps) {
   const pages = [
-    { pageNum: 0, title: "About", url: "/" },
+    { pageNum: 0, title: "About Me", url: "/" },
     { pageNum: 1, title: "Projects", url: "/projects" },
-    { pageNum: 2, title: "Travel", url: "/travel" },
+    { pageNum: 2, title: "Reading", url: "/reading" },
   ];
   const activeNavItem = {
     divCss:
-      "md:relative rounded-full md:mr-3 w-1 h-1 mt-1 md:mt-0 bg-secondary scale-150 max-md:hidden",
+      "md:relative md:mr-2 h-0 w-0 border-t-4 border-b-4 border-l-8 border-l-secondary border-t-transparent border-b-transparent mt-1 md:mt-0 max-md:hidden",
     aCss: "transition-opacity text-base text-secondary font-bold",
   };
 

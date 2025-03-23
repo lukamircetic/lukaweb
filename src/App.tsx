@@ -2,11 +2,12 @@ import { useState } from "react";
 import Nav from "./Nav";
 import About from "./About";
 import Projects from "./Projects";
+import Reading from "./Reading";
 
 enum Pages {
   About,
   Projects,
-  Travel,
+  Reading,
 }
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
         return <About />;
       case Pages.Projects:
         return <Projects />;
+      case Pages.Reading:
+        return <Reading />;
       default:
         return <div>WIP</div>;
     }

@@ -5,7 +5,7 @@ function About() {
     <div>
       <div className="flex flex-col md:flex-row space-x-8">
         <div className="basis-1/2 max-w-prose max-[925px]:mb-6">
-          <p className="max-sm:text-sm">
+          <p className="max-sm:text-sm ">
             I am a software engineer from Toronto with a background in web
             development and data engineering. Outside of work I love playing
             sports and traveling.
@@ -54,24 +54,24 @@ function About() {
         </div>
       </div>
       <div className="flex flex-col">
-        <h2 className="text-slate-300 mb-1 text-sm max-sm:text-xs">Contact</h2>
-        <div className="w-full">
+        <h2 className="text-slate-300 mb-1 text-sm max-sm:text-xs">Links</h2>
+        <div className="w-full flex flex-col gap-1">
           <p className="max-sm:text-sm">
-            Find me on{" "}
-            <a
-              className="underline"
-              href="https://www.linkedin.com/in/luka-mircetic/"
-              target="_blank"
-            >
-              linkedin
-            </a>{" "}
-            or{" "}
             <a
               className="underline"
               href="https://github.com/lukamircetic"
               target="_blank"
             >
               github
+            </a>
+          </p>
+          <p className="max-sm:text-sm">
+            <a
+              className="underline"
+              href="https://www.linkedin.com/in/luka-mircetic/"
+              target="_blank"
+            >
+              linkedin
             </a>
           </p>
         </div>
