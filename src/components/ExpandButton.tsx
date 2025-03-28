@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 interface ExpandButtonProps {
   isOpen: boolean;
@@ -8,8 +8,10 @@ interface ExpandButtonProps {
 export function ExpandButton({ isOpen, setIsOpen }: ExpandButtonProps) {
   return (
     <button onClick={() => setIsOpen(!isOpen)}>
-      {!isOpen && <ChevronRight className="ml-[-4px]" />}
-      {isOpen && <ChevronDown className="ml-[-4px]" />}
+      <ChevronRight
+        // transform transition-transform duration-200 ease-in-out
+        className={`ml-[-4px] ${isOpen ? "rotate-90" : "rotate-0"}`}
+      />
     </button>
   );
 }
