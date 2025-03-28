@@ -52,7 +52,7 @@ export const allProjects = [
         languages: ["Matlab", "Genome Compiler"],
         githubLink: "",
         demoLink: "https://lukamircetic.ca/static/media/dpy2.5443ea2c.pdf",
-    },        
+    },
     {
         type: "biomedical",
         name: "Ostomy Bag Solution",

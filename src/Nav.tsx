@@ -7,7 +7,7 @@ interface NavProps {
 
 function Nav({ currPage, setPage }: NavProps) {
   const pages = [
-    { pageNum: 0, title: "About Me", url: "/" },
+    { pageNum: 0, title: "About", url: "/" },
     { pageNum: 1, title: "Projects", url: "/projects" },
     { pageNum: 2, title: "Reading", url: "/reading" },
   ];
@@ -29,7 +29,7 @@ function Nav({ currPage, setPage }: NavProps) {
       <div className="flex flex-row md:flex-col space-x-4 md:space-x-0 md:pr-10">
         {pages.map((page, index) => (
           <div
-            className="flex flex-col md:flex-row text-sm py-1 items-center"
+            className="flex flex-col md:flex-row py-1 items-center"
             key={index}
           >
             <div

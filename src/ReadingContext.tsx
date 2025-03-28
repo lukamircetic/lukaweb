@@ -6,17 +6,7 @@ import {
   ReactNode,
 } from "react";
 
-interface Article {
-  id: number;
-  title: string;
-  author: string;
-  summary: string;
-  dateRead: string;
-  datePublished: string;
-  link: string;
-  image_path: string;
-  type: number;
-}
+import { Article } from "./types";
 
 interface ReadingContextType {
   articles: Article[];
