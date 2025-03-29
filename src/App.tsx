@@ -39,7 +39,7 @@ function App() {
               <h1 className="md:text-4xl text-2xl">Luka Mircetic</h1>
             </div>
             {renderPage()}
-            <div className="self-start justify-self-start fw-full text-center text-xs mt-12">
+            <div className="self-start justify-self-start fw-full text-center text-xs mt-12 mb-6">
               © Luka Mircetic ⦁ 2025
             </div>
           </div>
