@@ -1,20 +1,33 @@
-import { useState } from "react";
 import { ArticleType, type Article } from "../types";
 import { ExpandButton } from "./ExpandButton";
 import { ArrowUpRight, Check } from "lucide-react";
 
 interface ArticleProps {
   article: Article;
+  openArticle: number;
+  setOpenArticle: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export function Article({ article }: ArticleProps) {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+export function Article({
+  article,
+  openArticle,
+  setOpenArticle,
+}: ArticleProps) {
   const formatAuthor = (author: string): string => {
     if (!author.includes(",")) {
       return author;
     }
     return author.split(",")[0] + " et al.";
   };
+
+  const toggleArticle = () => {
+    if (openArticle === article.id) {
+      setOpenArticle(-1);
+    } else {
+      setOpenArticle(article.id);
+    }
+  };
+
   return (
     <div className="flex flex-col gap-1">
       <a
@@ -28,7 +41,10 @@ export function Article({ article }: ArticleProps) {
         <ArrowUpRight />
       </a>
       <div className="flex flex-row gap-2 text-slate-300">
-        <ExpandButton isOpen={isOpen} setIsOpen={setIsOpen} />
+        <ExpandButton
+          isOpen={article.id === openArticle}
+          toggleArticle={toggleArticle}
+        />
         <div className="group flex gap-1 justify-between items-center w-full">
           <div className="flex flex-row gap-3">
             <span className="">{formatAuthor(article.author)}</span>
@@ -42,15 +58,7 @@ export function Article({ article }: ArticleProps) {
           </span>
         </div>
       </div>
-      {isOpen && <div className="">{article.summary}</div>}
+      {article.id === openArticle && <div className="">{article.summary}</div>}
     </div>
   );
 }
-
-/*
-
-curl -H 'Content-Type: application/json' -d \
-'{ "https://www.dgt.is/blog/2025-01-10-nix-death-by-a-thousand-cuts/" }' \
--X POST https://mojecitanje.lukamircetic.ca/articles
-
-*/

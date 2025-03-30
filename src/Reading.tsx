@@ -7,6 +7,7 @@ function Reading() {
   const { articles, totalArticles, fetchArticlesByPage, isLoading, error } =
     useReading();
   const [currentPage, setCurrentPage] = useState(1);
+  const [openArticle, setOpenArticle] = useState(-1);
   if (isLoading) return <div>Loading articles... </div>;
   if (error) return <div>Error loading articles, please try again later </div>;
   // console.log(articles);
@@ -19,7 +20,12 @@ function Reading() {
       <div className="flex flex-col gap-6 min-h-[875px]">
         {articles &&
           articles.map((article) => (
-            <Article article={article} key={article.id} />
+            <Article
+              article={article}
+              key={article.id}
+              openArticle={openArticle}
+              setOpenArticle={setOpenArticle}
+            />
           ))}
       </div>
       <Pagination

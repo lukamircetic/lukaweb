@@ -2,12 +2,12 @@ import { ChevronRight } from "lucide-react";
 
 interface ExpandButtonProps {
   isOpen: boolean;
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  toggleArticle: () => void;
 }
 
-export function ExpandButton({ isOpen, setIsOpen }: ExpandButtonProps) {
+export function ExpandButton({ isOpen, toggleArticle }: ExpandButtonProps) {
   return (
-    <button onClick={() => setIsOpen(!isOpen)}>
+    <button onClick={() => toggleArticle()}>
       <ChevronRight
         // transform transition-transform duration-200 ease-in-out
         className={`ml-[-4px] ${isOpen ? "rotate-90" : "rotate-0"}`}
