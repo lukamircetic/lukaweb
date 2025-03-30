@@ -1,13 +1,19 @@
+import { useEffect, useState } from "react";
 import { Article } from "./components/Article";
 import { Pagination } from "./components/Pagination";
 import { useReading } from "./ReadingContext";
 
 function Reading() {
-  const { articles, isLoading, error } = useReading();
-
+  const { articles, totalArticles, fetchArticlesByPage, isLoading, error } =
+    useReading();
+  const [currentPage, setCurrentPage] = useState(1);
   if (isLoading) return <div>Loading articles... </div>;
   if (error) return <div>Error loading articles, please try again later </div>;
   // console.log(articles);
+  useEffect(() => {
+    fetchArticlesByPage(currentPage);
+  }, [currentPage]);
+
   return (
     <div className="flex flex-col gap-4 max-w-2xl">
       <div className="flex flex-col gap-6 min-h-[875px]">
@@ -16,7 +22,12 @@ function Reading() {
             <Article article={article} key={article.id} />
           ))}
       </div>
-      <Pagination firstPage={0} currentPage={10} lastPage={100} />
+      <Pagination
+        firstPage={1}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+        lastPage={Math.ceil(totalArticles / 10)}
+      />
     </div>
   );
 }
