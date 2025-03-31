@@ -76,7 +76,7 @@ export const useReading = () => {
 };
 
 const createPaginatedUrl = (page?: number) => {
-  let url = "https://mojecitanje.lukamircetic.ca/articles";
+  let url = import.meta.env.VITE_API_URL_PROD;
   if (!page) {
     return url;
   } else {
