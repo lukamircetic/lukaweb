@@ -1,6 +1,5 @@
 import { ArticleType, type Article } from "../types";
-import { ExpandButton } from "./ExpandButton";
-import { ArrowUpRight, Check } from "lucide-react";
+import { ArrowUpRight, Check, ChevronRight } from "lucide-react";
 
 interface ArticleProps {
   article: Article;
@@ -40,10 +39,15 @@ export function Article({
         </span>
         <ArrowUpRight size={24} className="flex-shrink-0" />
       </a>
-      <div className="flex flex-row gap-2 text-slate-300">
-        <ExpandButton
-          isOpen={article.id === openArticle}
-          toggleArticle={toggleArticle}
+      <button
+        className="flex flex-row gap-2 text-slate-300"
+        onClick={() => toggleArticle()}
+      >
+        <ChevronRight
+          // transform transition-transform duration-200 ease-in-out
+          className={`ml-[-4px] ${
+            article.id === openArticle ? "rotate-90" : "rotate-0"
+          }`}
         />
         <div className="group flex gap-1 justify-between items-center w-full italic">
           <div className="flex flex-row gap-3">
@@ -59,7 +63,7 @@ export function Article({
             {article.dateRead}
           </span>
         </div>
-      </div>
+      </button>
       {article.id === openArticle && (
         <div className="text-sm sm:text-base">{article.summary}</div>
       )}
