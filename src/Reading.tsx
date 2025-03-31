@@ -12,7 +12,7 @@ function Reading() {
 
   if (isLoading) return <div>Loading articles... </div>;
   if (error) return <div>Error loading articles, please try again later </div>;
-  // console.log(articles);
+
   useEffect(() => {
     fetchArticlesByPage(currentPage);
     const height = getListHeight();

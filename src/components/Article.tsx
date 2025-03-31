@@ -38,7 +38,7 @@ export function Article({
         <span className="whitespace-nowrap overflow-hidden text-ellipsis min-w-0">
           {article.title}
         </span>
-        <ArrowUpRight />
+        <ArrowUpRight size={24} className="flex-shrink-0" />
       </a>
       <div className="flex flex-row gap-2 text-slate-300">
         <ExpandButton
@@ -48,11 +48,13 @@ export function Article({
         <div className="group flex gap-1 justify-between items-center w-full">
           <div className="flex flex-row gap-3">
             <span className="">{formatAuthor(article.author)}</span>
-            <span className="">{article.datePublished}</span>
-            <span className="">{ArticleType[article.type]}</span>
+            <span className="hidden sm:inline">{article.datePublished}</span>
+            <span className="hidden sm:inline">
+              {ArticleType[article.type]}
+            </span>
           </div>
           {/* <span className="flex-grow border-t border-slate-400 self-center mx-3 opacity-10"></span> */}
-          <span className="flex flex-row gap-1 items-center">
+          <span className="flex-row gap-1 items-center hidden lg:flex">
             <Check size={18} />
             {article.dateRead}
           </span>
