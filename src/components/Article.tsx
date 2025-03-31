@@ -45,7 +45,7 @@ export function Article({
           isOpen={article.id === openArticle}
           toggleArticle={toggleArticle}
         />
-        <div className="group flex gap-1 justify-between items-center w-full">
+        <div className="group flex gap-1 justify-between items-center w-full italic">
           <div className="flex flex-row gap-3">
             <span className="">{formatAuthor(article.author)}</span>
             <span className="hidden sm:inline">{article.datePublished}</span>
@@ -60,7 +60,9 @@ export function Article({
           </span>
         </div>
       </div>
-      {article.id === openArticle && <div className="">{article.summary}</div>}
+      {article.id === openArticle && (
+        <div className="text-sm sm:text-base">{article.summary}</div>
+      )}
     </div>
   );
 }
