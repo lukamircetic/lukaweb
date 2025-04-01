@@ -1,34 +1,38 @@
-import ProfilePhoto from "./assets/luka2.jpg";
-
 function About() {
   return (
-    <div>
-      <div className="flex flex-col md:flex-row space-x-8">
-        <div className="basis-1/2 max-w-prose max-[925px]:mb-6">
+    <div className="flex flex-col gap-6 max-w-prose">
+      <div className="flex flex-col md:flex-row max-w-prose">
+        <div className="max-[925px]:mb-6">
           <p className="max-sm:text-sm ">
             I am a software engineer from Toronto with a background in web
             development and data engineering. Outside of work I love playing
             sports and traveling.
           </p>
         </div>
-        <div>
-          <img
-            src={ProfilePhoto}
-            className="w-36 rounded-full basis-1/3 sm:basis-1/3 border-2 border-black max-md:hidden"
-          />
-        </div>
       </div>
-      <div className="flex flex-col mb-6">
+      <div className="flex flex-col">
         <h2 className="text-slate-300 mb-1 text-sm max-sm:text-xs">Current</h2>
         <p className="max-sm:text-sm">Working on Inflow @ Archon Systems</p>
       </div>
-      <div className="flex flex-col mb-6">
+      <div className="flex flex-col">
         <h2 className="text-slate-300 mb-1 text-sm max-sm:text-xs">Previous</h2>
-        <p className="mb-1 max-sm:text-sm">Software Developer @ Shopify</p>
-        <p className="mb-1 max-sm:text-sm">Data Engineer @ Tesla</p>
-        <p className="mb-1 max-sm:text-sm">Software Developer @ CIBC</p>
+        <div className="flex flex-row">
+          <span className="mb-1 max-sm:text-sm">Software Developer</span>
+          <span className="flex-grow border-t border-slate-400 self-center mx-3 opacity-20"></span>
+          <span className="mb-1 max-sm:text-sm">Shopify</span>
+        </div>
+        <div className="flex flex-row">
+          <span className="mb-1 max-sm:text-sm">Data Engineer</span>
+          <span className="flex-grow border-t border-slate-400 self-center mx-3 opacity-20"></span>
+          <span className="mb-1 max-sm:text-sm">Tesla</span>
+        </div>
+        <div className="flex flex-row">
+          <span className="mb-1 max-sm:text-sm">Software Developer</span>
+          <span className="flex-grow border-t border-slate-400 self-center mx-3 opacity-20"></span>
+          <span className="mb-1 max-sm:text-sm">CIBC</span>
+        </div>
       </div>
-      <div className="flex flex-col mb-6">
+      <div className="flex flex-col">
         <h2 className="text-slate-300 mb-1 text-sm max-sm:text-xs">
           Education
         </h2>
@@ -36,7 +40,7 @@ function About() {
           Software and Biomedical Engineering @ McMaster University
         </p>
       </div>
-      <div className="flex flex-col mb-6">
+      <div className="flex flex-col">
         <h2 className="text-slate-300 mb-1 text-sm max-sm:text-xs">
           Building (WIP)
         </h2>
