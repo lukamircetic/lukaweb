@@ -6,9 +6,8 @@ function About() {
       <div className="flex flex-col md:flex-row space-x-8">
         <div className="basis-1/2 max-w-prose max-[925px]:mb-6">
           <p className="max-sm:text-sm ">
-            I am a software engineer from Toronto with a background in web
-            development and data engineering. Outside of work I love playing
-            sports and traveling.
+            I am a software engineer from Toronto with a background in web development and data
+            engineering. Outside of work I love playing sports and traveling.
           </p>
         </div>
         <div>
@@ -29,39 +28,14 @@ function About() {
         <p className="mb-1 max-sm:text-sm">Software Developer @ CIBC</p>
       </div>
       <div className="flex flex-col mb-6">
-        <h2 className="text-slate-300 mb-1 text-sm max-sm:text-xs">
-          Education
-        </h2>
-        <p className="max-sm:text-sm">
-          Software and Biomedical Engineering @ McMaster University
-        </p>
-      </div>
-      <div className="flex flex-col mb-6">
-        <h2 className="text-slate-300 mb-1 text-sm max-sm:text-xs">
-          Building (WIP)
-        </h2>
-        <div className="flex flex-col mb-2">
-          <h3 className="max-sm:text-sm">NBA Shots</h3>
-          <p className="italic max-sm:text-sm">
-            Shot charting for nba shooting data
-          </p>
-        </div>
-        <div className="flex flex-col mb-2">
-          <h3 className="max-sm:text-sm">Sportami</h3>
-          <p className="italic max-sm:text-sm">
-            Matching application for people that are looking for tennis partners
-          </p>
-        </div>
+        <h2 className="text-slate-300 mb-1 text-sm max-sm:text-xs">Education</h2>
+        <p className="max-sm:text-sm">Software and Biomedical Engineering @ McMaster University</p>
       </div>
       <div className="flex flex-col">
         <h2 className="text-slate-300 mb-1 text-sm max-sm:text-xs">Links</h2>
         <div className="w-full flex flex-col gap-1">
           <p className="max-sm:text-sm">
-            <a
-              className="underline"
-              href="https://github.com/lukamircetic"
-              target="_blank"
-            >
+            <a className="underline" href="https://github.com/lukamircetic" target="_blank">
               github
             </a>
           </p>
@@ -72,6 +46,11 @@ function About() {
               target="_blank"
             >
               linkedin
+            </a>
+          </p>
+          <p className="max-sm:text-sm">
+            <a className="underline" href="https://x.com/luka_software" target="_blank">
+              twitter
             </a>
           </p>
         </div>

@@ -1,27 +1,12 @@
-import {
-  createContext,
-  useContext,
-  useState,
-  useEffect,
-  ReactNode,
-} from "react";
+import { ReactNode, useCallback, useState } from "react";
 
 import { Article } from "./types";
-
-interface ReadingContextType {
-  articles: Article[];
-  totalArticles: number;
-  isLoading: boolean;
-  error: Error | null;
-  fetchArticlesByPage: (page: number) => Promise<void>;
-}
+import { ReadingContext } from "./reading-context";
 
 interface ArticlePage {
   totalArticles: number;
   articles: Article[];
 }
-
-const ReadingContext = createContext<ReadingContextType | undefined>(undefined);
 
 export const ReadingProvider = ({ children }: { children: ReactNode }) => {
   const [articles, setArticles] = useState<Article[]>([]);
@@ -29,34 +14,45 @@ export const ReadingProvider = ({ children }: { children: ReactNode }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
 
-  const fetchArticles = async (page?: number) => {
-    try {
-      const url = createPaginatedUrl(page);
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error("failed to fetch articles");
+  const fetchArticles = useCallback(
+    async (page?: number, signal?: AbortSignal) => {
+      setIsLoading(true);
+      setError(null);
+
+      try {
+        const url = createPaginatedUrl(page);
+        const response = await fetch(url, { signal });
+        if (!response.ok) {
+          throw new Error("failed to fetch articles");
+        }
+        const data: ArticlePage = await response.json();
+        setArticles(data.articles);
+        setTotalArticles(data.totalArticles);
+      } catch (err) {
+        if (err instanceof Error && err.name === "AbortError") {
+          return;
+        }
+
+        setError(
+          err instanceof Error
+            ? err
+            : new Error("error while fetching articles from api")
+        );
+      } finally {
+        if (!signal?.aborted) {
+          setIsLoading(false);
+        }
       }
-      const data: ArticlePage = await response.json();
-      setArticles(data.articles);
-      setTotalArticles(data.totalArticles);
-    } catch (err) {
-      setError(
-        err instanceof Error
-          ? err
-          : new Error("error while fetching articles from api")
-      );
-    } finally {
-      setIsLoading(false);
-    }
-  };
+    },
+    []
+  );
 
-  useEffect(() => {
-    fetchArticles();
-  }, []);
-
-  const fetchArticlesByPage = async (page: number) => {
-    await fetchArticles(page);
-  };
+  const fetchArticlesByPage = useCallback(
+    async (page: number, signal?: AbortSignal) => {
+      await fetchArticles(page, signal);
+    },
+    [fetchArticles]
+  );
 
   return (
     <ReadingContext.Provider
@@ -67,16 +63,8 @@ export const ReadingProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export const useReading = () => {
-  const context = useContext(ReadingContext);
-  if (context === undefined) {
-    throw new Error("useReading must be used within a ReadingProvider");
-  }
-  return context;
-};
-
 const createPaginatedUrl = (page?: number) => {
-  let url = import.meta.env.VITE_API_URL_PROD;
+  const url = import.meta.env.VITE_API_URL_PROD;
   if (!page) {
     return url;
   } else {

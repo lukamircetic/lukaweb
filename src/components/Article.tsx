@@ -32,19 +32,19 @@ export function Article({
       <a
         href={article.link}
         target="_blank"
-        className="flex flex-row text-lg items-center gap-1 hover:underline"
+        className="flex flex-row text-sm sm:text-base items-center gap-1 hover:underline"
       >
         <span className="whitespace-nowrap overflow-hidden text-ellipsis min-w-0">
           {article.title}
         </span>
-        <ArrowUpRight size={24} className="flex-shrink-0" />
+        <ArrowUpRight size={18} className="flex-shrink-0" />
       </a>
       <button
-        className="flex flex-row gap-2 text-slate-300"
+        className="flex flex-row gap-2 text-sm text-slate-300"
         onClick={() => toggleArticle()}
       >
         <ChevronRight
-          // transform transition-transform duration-200 ease-in-out
+          size={14}
           className={`ml-[-4px] ${
             article.id === openArticle ? "rotate-90" : "rotate-0"
           }`}
@@ -59,13 +59,13 @@ export function Article({
           </div>
           {/* <span className="flex-grow border-t border-slate-400 self-center mx-3 opacity-10"></span> */}
           <span className="flex-row gap-1 items-center hidden lg:flex">
-            <Check size={18} />
+            <Check size={14} />
             {article.dateRead}
           </span>
         </div>
       </button>
       {article.id === openArticle && (
-        <div className="text-sm sm:text-base">{article.summary}</div>
+        <div className="text-sm">{article.summary}</div>
       )}
     </div>
   );

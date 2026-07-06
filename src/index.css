@@ -20,3 +20,7 @@ body {
     @apply m-0;
     @apply text-whitetext;
 }
+
+html {
+    scrollbar-gutter: stable;
+}
