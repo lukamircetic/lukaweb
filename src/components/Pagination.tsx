@@ -4,7 +4,7 @@ interface PaginationProps {
   firstPage: number;
   currentPage: number;
   lastPage: number;
-  setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
+  setCurrentPage: (page: number) => void;
 }
 
 export function Pagination({
